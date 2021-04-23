@@ -995,4 +995,47 @@ footer .bottom-container {
 .btn-close-modal:focus {
   box-shadow: none;
 }
+
+.cart-item-title {
+  color: #1d1d1d;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 0.8em;
+  text-transform: capitalize;
+}
+
+.cart-item-price,
+.cart-item-size,
+.cart-item-quantity {
+  color: #1d1d1d;
+  font-size: 14px;
+}
+
+.cart-item-size {
+  margin-bottom: 0.8em;
+}
+
+@media (min-width: 992px) {
+  .cart-left {
+    border-right: 1px solid #ebebeb;
+  }
+}
+
+.cart-right {
+  color: #1d1d1d;
+}
+
+@media (min-width: 992px) {
+  .cart-right {
+    padding-left: 1.5em;
+  }
+}
+
+.cart-right div:not(:last-child) {
+  margin-bottom: 0.2em;
+}
+
+.cart-right .next-step-block {
+  margin-top: 1em;
+}
 /*# sourceMappingURL=style.css.map */
