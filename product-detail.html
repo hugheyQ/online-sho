@@ -282,7 +282,7 @@
                                         <button class="btn btn-outline-primary" type="button" id="addQ"><i class="bi bi-plus"></i></button>
                                     </div>
 
-                                    <button class="btn add-to-cart-btn" type="submit"><i class="bi bi-cart-plus"></i> Add to cart</button>
+                                    <button class="btn add-to-cart-btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-cart-plus"></i> Add to cart</button>
                                 </div>
   
                                 
@@ -890,12 +890,50 @@
 </html>
 
 
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style="width: 50%;">
-  <div class="offcanvas-header">
-    <h5 id="offcanvasRightLabel">Offcanvas right</h5>
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    ...
-  </div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content border-0">
+        <div class="modal-header bg-dark text-white text-center">
+            <h5 class="d-block w-100" id="exampleModalLabel">Product Successfully Added To Your Shopping Cart!</h5>
+            <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+            <a href="#" class="btn btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
+                <i class="fi-rr-cross"></i>
+            </a>
+            
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images/item.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <p>
+                                Juicy Couture Juicy Quilted Terry Track Jacket 2
+                            </p>
+
+                            <div>$28.72</div>
+                            <div>Size: N/A</div>
+                            <div>Quantity: 2</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div>There are 2 items in your cart</div>
+                    <div>Total products: &#163;100.00</div>
+                    <div>Total shipping: &#163;7.00</div>
+                    <div>Taxes: &#163;0.00</div>
+                    <div>Total: &#163;100.00 (tax excl.)</div>
+
+                    <div class="next-step-block">
+                        <a href="index.html" class="btn btn-dark">Continue Shopping</a>
+                        <a href="checkout.html" class="btn btn-dark">Proceed To Checkout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
 </div>
