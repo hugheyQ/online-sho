@@ -140,3 +140,15 @@ section {
 		}
 	}
 }
+
+.btn-dark {
+	font-size: 14px;
+	font-weight: 400;
+	padding: 10px 25px;
+	transition: all 300ms ease-in-out;
+	border: none;
+
+	&:hover {
+		background-color: #146cda;
+	}
+}

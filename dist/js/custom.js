@@ -79,4 +79,27 @@ $(document).ready(function () {
 			},
 		},
 	});
+
+	const addBtn = document.querySelector("#addQ");
+	const subtractBtn = document.querySelector("#subtractQ");
+
+	addBtn.addEventListener("click", () => {
+		let productQ = document.querySelector("#productQ").value;
+
+		if (productQ < 100) {
+			let newQ = ++productQ;
+
+			document.querySelector("#productQ").value = newQ;
+		}
+	});
+
+	subtractBtn.addEventListener("click", () => {
+		let productQ = document.querySelector("#productQ").value;
+
+		if (productQ >= 1) {
+			let newQ = --productQ;
+
+			document.querySelector("#productQ").value = newQ;
+		}
+	});
 });

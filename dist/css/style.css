@@ -134,6 +134,18 @@ section hr {
   opacity: 1;
 }
 
+.btn-dark {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 25px;
+  transition: all 300ms ease-in-out;
+  border: none;
+}
+
+.btn-dark:hover {
+  background-color: #146cda;
+}
+
 header .top {
   background-color: #2064da;
   font-size: 13px;
@@ -518,18 +530,6 @@ main.cart-page h1 {
   font-weight: 700;
 }
 
-main.cart-page .btn-dark {
-  font-size: 14px;
-  font-weight: 400;
-  padding: 10px 25px;
-  transition: all 300ms ease-in-out;
-  border: none;
-}
-
-main.cart-page .btn-dark:hover {
-  background-color: #146cda;
-}
-
 main.cart-page .cart-item {
   border-bottom: 1px solid #ebebeb;
 }
@@ -633,6 +633,240 @@ main.checkout-page .forgot-password {
 
 main.checkout-page .forgot-password:hover {
   color: #146cda;
+}
+
+main.confirmation-page h3 {
+  color: #1d1d1d;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+main.confirmation-page h4 {
+  color: #1d1d1d;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-top: 1.8em;
+  margin-bottom: 0.5em;
+}
+
+main.confirmation-page p {
+  color: #888888;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+main.confirmation-page .order-items-container .order-item {
+  border-bottom: 1px solid #ebebeb;
+  color: #888888;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@media (max-width: 767.98px) {
+  main.confirmation-page .order-items-container .order-item .product-total-price {
+    font-weight: 700;
+  }
+}
+
+main.confirmation-page .order-cost-summary .list-group-item,
+main.confirmation-page .order-details .list-group-item {
+  color: #888888;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+main.confirmation-page .order-cost-summary .order-cost-summary-total,
+main.confirmation-page .order-details .order-cost-summary-total {
+  font-weight: 700;
+}
+
+main.confirmation-page .order-details {
+  margin-bottom: 2em;
+}
+
+main.product-detail-page h1 {
+  color: #212529;
+  line-height: 39px;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 0.6em;
+}
+
+main.product-detail-page .product-thumbnail {
+  height: 60px;
+  width: 60px;
+  border: 1px solid #ebebeb;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: border 300ms ease-in-out;
+}
+
+main.product-detail-page .product-thumbnail:hover {
+  border: 1px solid #146cda;
+  cursor: pointer;
+}
+
+main.product-detail-page .product-thumbnail:not(:last-child) {
+  margin-right: 0.6em;
+}
+
+main.product-detail-page .product-stats {
+  margin-bottom: 0.6em;
+}
+
+main.product-detail-page .product-stats .total-reviews {
+  color: #969696;
+  font-weight: 400;
+}
+
+main.product-detail-page .product-stats .total-orders {
+  color: #00b517;
+}
+
+main.product-detail-page .price-block {
+  color: #212529;
+  font-size: 22.5px;
+  font-weight: 600;
+  margin-bottom: 0.6em;
+}
+
+main.product-detail-page .price-block .with-vat {
+  color: #969696;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+main.product-detail-page .product-details {
+  width: 25em;
+  border: none;
+  color: #212529;
+  font-size: 14px;
+  margin-bottom: 2em;
+}
+
+main.product-detail-page .product-details .list-group-item {
+  padding: 0.2em 0;
+  border: none;
+}
+
+main.product-detail-page .product-details .list-group-item .col-6:nth-child(1) {
+  font-weight: 600;
+}
+
+main.product-detail-page .cta-block {
+  margin-bottom: 2em;
+}
+
+main.product-detail-page .cta-block .quantity-container {
+  width: auto;
+  margin-right: 0.7em;
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */
+}
+
+main.product-detail-page .cta-block .quantity-container input::-webkit-outer-spin-button,
+main.product-detail-page .cta-block .quantity-container input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+main.product-detail-page .cta-block .quantity-container input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+main.product-detail-page .cta-block .quantity-container .quantity-field {
+  text-align: center;
+  max-width: 50px;
+  font-size: 14px;
+}
+
+main.product-detail-page .cta-block .add-to-cart-btn {
+  text-transform: capitalize;
+  background-color: #00b517;
+  color: white;
+}
+
+main.product-detail-page .reviews-section h3 {
+  font-weight: 600;
+  margin-bottom: 0.7em;
+  text-transform: capitalize;
+}
+
+main.product-detail-page .reviews-section h4 {
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+main.product-detail-page .reviews-section .wr-btn {
+  padding: 0.8em 2em;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+main.product-detail-page .reviews-section .write-review .post-btn {
+  padding: 0.8em 3em;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+main.product-detail-page .reviews-section .write-review label {
+  color: grey;
+  text-transform: capitalize;
+}
+
+main.product-detail-page .reviews-section .write-review textarea {
+  min-height: 200px;
+}
+
+main.product-detail-page .reviews-section .reviews-feed .list-group-item {
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+}
+
+main.product-detail-page .reviews-section .reviews-feed .list-group-item .reviewer-name {
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: capitalize;
+  margin-bottom: 0.3em;
+}
+
+main.product-detail-page .reviews-section .reviews-feed .list-group-item .reviewer-name .reviewer-status {
+  font-weight: 400;
+  font-size: 10px;
+  margin-left: 0.6em;
+}
+
+main.product-detail-page .reviews-section .reviews-feed .list-group-item .review-title {
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: capitalize;
+  margin-bottom: 0.3em;
+}
+
+main.product-detail-page .reviews-section .reviews-feed .list-group-item .review-content {
+  font-size: 14px;
+}
+
+main.product-detail-page .reviews-section .reviews-feed .list-group-item .published-date {
+  font-weight: 400;
+  font-size: 10px;
+}
+
+main.product-detail-page .reviews-section .reviews-feed .review-nav .page-item.active {
+  color: white;
+}
+
+main.product-detail-page .reviews-section .reviews-feed .review-nav .page-item .page-link {
+  border: 1px solid #146cda;
+  transition: all 300ms ease-in-out;
+}
+
+main.product-detail-page .reviews-section .reviews-feed .review-nav .page-item .page-link:hover {
+  background-color: #146cda;
+  color: white;
 }
 
 footer {

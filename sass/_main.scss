@@ -170,18 +170,6 @@ main {
 			font-weight: 700;
 		}
 
-		.btn-dark {
-			font-size: 14px;
-			font-weight: 400;
-			padding: 10px 25px;
-			transition: all 300ms ease-in-out;
-			border: none;
-
-			&:hover {
-				background-color: #146cda;
-			}
-		}
-
 		.cart-item {
 			border-bottom: 1px solid #ebebeb;
 		}
@@ -290,6 +278,258 @@ main {
 
 			&:hover {
 				color: #146cda;
+			}
+		}
+	}
+
+	&.confirmation-page {
+		h3 {
+			color: #1d1d1d;
+			font-size: 22px;
+			font-weight: 700;
+			text-transform: capitalize;
+		}
+
+		h4 {
+			color: #1d1d1d;
+			font-size: 18px;
+			font-weight: 700;
+			text-transform: capitalize;
+			margin-top: 1.8em;
+			margin-bottom: 0.5em;
+		}
+
+		p {
+			color: #888888;
+			font-size: 14px;
+			font-weight: 400;
+		}
+
+		.order-items-container {
+			.order-item {
+				border-bottom: 1px solid #ebebeb;
+				color: #888888;
+				font-size: 14px;
+				font-weight: 400;
+
+				.product-total-price {
+					@media (max-width: 767.98px) {
+						font-weight: 700;
+					}
+				}
+			}
+		}
+
+		.order-cost-summary,
+		.order-details {
+			.list-group-item {
+				color: #888888;
+				font-size: 14px;
+				font-weight: 400;
+			}
+			.order-cost-summary-total {
+				font-weight: 700;
+			}
+		}
+
+		.order-details {
+			margin-bottom: 2em;
+		}
+	}
+
+	&.product-detail-page {
+		h1 {
+			color: #212529;
+			line-height: 39px;
+			font-size: 30px;
+			font-weight: 700;
+			margin-bottom: 0.6em;
+		}
+
+		.product-thumbnail {
+			height: 60px;
+			width: 60px;
+			border: 1px solid #ebebeb;
+			border-radius: 6px;
+			overflow: hidden;
+			transition: border 300ms ease-in-out;
+
+			&:hover {
+				border: 1px solid #146cda;
+				cursor: pointer;
+			}
+
+			&:not(:last-child) {
+				margin-right: 0.6em;
+			}
+		}
+
+		.product-stats {
+			margin-bottom: 0.6em;
+			// font-size: 12px;
+
+			.total-reviews {
+				color: #969696;
+				font-weight: 400;
+			}
+
+			.total-orders {
+				color: #00b517;
+			}
+		}
+
+		.price-block {
+			color: #212529;
+			font-size: 22.5px;
+			font-weight: 600;
+			margin-bottom: 0.6em;
+
+			.with-vat {
+				color: #969696;
+				font-size: 15px;
+				font-weight: 400;
+			}
+		}
+
+		.product-details {
+			width: 25em;
+			border: none;
+			color: #212529;
+			font-size: 14px;
+			margin-bottom: 2em;
+
+			.list-group-item {
+				padding: 0.2em 0;
+				border: none;
+
+				.col-6 {
+					&:nth-child(1) {
+						font-weight: 600;
+					}
+				}
+			}
+		}
+
+		.cta-block {
+			margin-bottom: 2em;
+
+			.quantity-container {
+				width: auto;
+				margin-right: 0.7em;
+
+				/* Chrome, Safari, Edge, Opera */
+				input::-webkit-outer-spin-button,
+				input::-webkit-inner-spin-button {
+					-webkit-appearance: none;
+					margin: 0;
+				}
+
+				/* Firefox */
+				input[type="number"] {
+					-moz-appearance: textfield;
+				}
+
+				.quantity-field {
+					text-align: center;
+					max-width: 50px;
+					font-size: 14px;
+				}
+			}
+
+			.add-to-cart-btn {
+				text-transform: capitalize;
+				background-color: #00b517;
+				color: white;
+			}
+		}
+
+		.reviews-section {
+			h3 {
+				font-weight: 600;
+				margin-bottom: 0.7em;
+				text-transform: capitalize;
+			}
+
+			h4 {
+				font-weight: 700;
+				font-size: 16px;
+				text-transform: uppercase;
+			}
+
+			.wr-btn {
+				padding: 0.8em 2em;
+				font-size: 16px;
+				text-transform: capitalize;
+			}
+
+			.write-review {
+				.post-btn {
+					padding: 0.8em 3em;
+					font-size: 16px;
+					text-transform: capitalize;
+				}
+
+				label {
+					color: grey;
+					text-transform: capitalize;
+				}
+
+				textarea {
+					min-height: 200px;
+				}
+			}
+
+			.reviews-feed {
+				.list-group-item {
+					padding-top: 2.5em;
+					padding-bottom: 2.5em;
+
+					.reviewer-name {
+						font-weight: 700;
+						font-size: 18px;
+						text-transform: capitalize;
+						margin-bottom: 0.3em;
+
+						.reviewer-status {
+							font-weight: 400;
+							font-size: 10px;
+							margin-left: 0.6em;
+						}
+					}
+
+					.review-title {
+						font-weight: 700;
+						font-size: 15px;
+						text-transform: capitalize;
+						margin-bottom: 0.3em;
+					}
+
+					.review-content {
+						font-size: 14px;
+					}
+
+					.published-date {
+						font-weight: 400;
+						font-size: 10px;
+					}
+				}
+
+				.review-nav {
+					.page-item {
+						&.active {
+							color: white;
+						}
+						.page-link {
+							border: 1px solid #146cda;
+							transition: all 300ms ease-in-out;
+
+							&:hover {
+								background-color: #146cda;
+								color: white;
+							}
+						}
+					}
+				}
 			}
 		}
 	}
