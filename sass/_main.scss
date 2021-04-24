@@ -507,7 +507,12 @@ main {
 		}
 
 		.right-section {
-			padding: 4em;
+			padding-top: 3em;
+			padding-bottom: 3em;
+
+			@media (min-width: 1200px) {
+				padding: 4em;
+			}
 
 			.right-section-inner {
 				h2 {

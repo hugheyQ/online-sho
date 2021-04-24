@@ -899,7 +899,14 @@ main.login-page .left-section .left-section-inner .signup-btn:hover {
 }
 
 main.login-page .right-section {
-  padding: 4em;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+@media (min-width: 1200px) {
+  main.login-page .right-section {
+    padding: 4em;
+  }
 }
 
 main.login-page .right-section .right-section-inner h2 {
