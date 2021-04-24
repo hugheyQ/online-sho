@@ -111,15 +111,16 @@
 
 
         <div class="navbar-icons-container d-md-flex d-lg-none d-flex">
-          <button class="btn navbar-btn cart-btn"><i class="fi-rr-shopping-cart"></i><span>1</span></button>
+          <button onclick="myFunction()" class="btn navbar-btn cart-btn"><i class="fi-rr-shopping-cart"></i><span>1</span></button>
+          
           
           <div class="dropdown">
             <button class="btn navbar-btn dropdown-toggle" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false"><i class="fi-rr-user"></i></button>
 
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenu2">
               <li><a href="#" class="dropdown-item" type="button">My account</a></li>
-              <li><a href="#" class="dropdown-item" type="button">Checkout</a></li>
-              <li><a href="#" class="dropdown-item" type="button">Sign in</a></li>
+              <li><a href="checkout.html" class="dropdown-item" type="button">Checkout</a></li>
+              <li><a href="login.html" class="dropdown-item" type="button">Sign in</a></li>
             </ul>
           </div>
         </div>
@@ -132,7 +133,7 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                 Electronics <i class="icofont-thin-down"></i>
+                Electronics <i class="icofont-thin-down"></i>
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -142,7 +143,7 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                 Audio & Video <i class="icofont-thin-down"></i>
+                Audio & Video <i class="icofont-thin-down"></i>
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -152,7 +153,7 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                 Video Games <i class="icofont-thin-down"></i>
+                Video Games <i class="icofont-thin-down"></i>
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -162,7 +163,7 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                 Camera & Photo <i class="icofont-thin-down"></i>
+                Camera & Photo <i class="icofont-thin-down"></i>
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -180,371 +181,371 @@
 
   </header>
 
-    <main class="checkout-page">
+  <main class="checkout-page">
 
-      <div class="container py-5">
-        <h1 class="mb-4">Checkout</h1>
-        <div class="row">
-            <div class="col-xl-8">
-                <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                          1 Personal Information
-                        </button>
-                      </h2>
-                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <nav>
-                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                  <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Order as a guest</button>
-                                  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Sign In</button>
-                                </div>
-                            </nav>
-                            <div class="tab-content" id="nav-tabContent">
-                                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                                    
-                                    <form action="" class="mt-4">
-                                        <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" id="floatingInput" placeholder="Eg: John">
-                                            <label for="floatingInput">First name</label>
-                                        </div>
-    
-                                        <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" id="floatingInput" placeholder="Eg: Doe">
-                                            <label for="floatingInput">Last name</label>
-                                        </div>
-
-                                        <div class="form-floating mb-3">
-                                            <input type="email" class="form-control" id="floatingInput" placeholder="Eg: john@example.com">
-                                            <label for="floatingInput">Email address</label>
-                                        </div>
-
-                                        <h5>Create an account (options)</h5>
-                                        <p>And save time on your next order!</p>
-
-                                        <div class="form-floating mb-3">
-                                            <input type="password" class="form-control" id="floatingInput" placeholder="Eg: ^AReRPTJEwZC">
-                                            <label for="floatingInput">Password</label>
-                                        </div>
-
-                                        <div class="form-floating mb-3">
-                                            <input type="date" class="form-control" id="floatingInput" placeholder="Eg: 05/31/1970">
-                                            <label for="floatingInput">Date of birth</label>
-                                        </div>
-
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="chk1">
-                                            <label class="form-check-label" for="chk1">
-                                                Receive offers from our partners
-                                            </label>
-                                        </div>
-
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="chk2">
-                                            <label class="form-check-label" for="chk2">
-                                                Sign up for our newsletter
-                                                You may unsubscribe at any moment. For that purpose, please find our contact info in the legal notice.
-                                            </label>
-                                        </div>
-
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="chk3">
-                                            <label class="form-check-label" for="chk3">
-                                                I agree to the terms and conditions and the privacy policy
-                                            </label>
-                                        </div>
-                                        <div class="d-flex justify-content-end">
-                                            <a href="#" class="btn btn-dark my-4" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Continue</a>
-                                        </div>
-                                        
-                                    </form>
-
-
-                                </div>
-
-                                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-
-
-                                    <form action="" class="mt-4">
-
-                                        <div class="form-floating mb-3">
-                                            <input type="email" class="form-control" id="floatingInput" placeholder="Eg: john@example.com">
-                                            <label for="floatingInput">Email address</label>
-                                        </div>
-
-                                        <div class="form-floating mb-3">
-                                            <input type="password" class="form-control" id="floatingInput" placeholder="Eg: ^AReRPTJEwZC">
-                                            <label for="floatingInput">Password</label>
-                                        </div>
-
-                                        <small><a href="#" class="forgot-password">Forgot your password?</a></small>
-
-                                        <div class="d-flex justify-content-end">
-                                            <a href="#" class="btn btn-dark my-4" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Continue</a>
-                                        </div>
-                                        
-                                    </form>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                         2 Addresses
-                        </button>
-                      </h2>
-                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p>The selected address will be used both as your personal address (for invoice) and as your delivery address.
-                            </p>
-
-                            <form action="" class="mt-4">
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput" placeholder="Eg: John">
-                                    <label for="floatingInput">First name</label>
-                                </div>
-
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput" placeholder="Eg: Doe">
-                                    <label for="floatingInput">Last name</label>
-                                </div>
-
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput" placeholder="Eg:ACME Limited">
-                                    <label for="floatingInput">Company</label>
-                                </div>
-
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput" placeholder="Eg:123, Happy Land, London">
-                                    <label for="floatingInput">Address</label>
-                                </div>
-
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput" placeholder="Eg:London">
-                                    <label for="floatingInput">City</label>
-                                </div>
-
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput" placeholder="Eg:London">
-                                    <label for="floatingInput">Zip/Postal Code</label>
-                                </div>
-
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput" placeholder="Eg: United Kingdom">
-                                    <label for="floatingInput">Country</label>
-                                </div>
-
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput" placeholder="Eg:(+44) 2031500392">
-                                    <label for="floatingInput">Phone</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="chk1" checked>
-                                    <label class="form-check-label" for="chk1">
-                                        Use this address for invoice too
-                                    </label>
-                                </div>
-
-                                <div class="d-flex justify-content-end">
-                                    <a href="#" class="btn btn-dark my-4" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Continue</a>
-                                </div>
-                                
-                            </form>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                          3 Payment
-                        </button>
-                      </h2>
-                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          <form action="">
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                  Payment on Delivery
-                                </label>
+    <div class="container py-5">
+      <h1 class="mb-4">Checkout</h1>
+      <div class="row">
+          <div class="col-xl-8">
+              <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        1 Personal Information
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                          <nav>
+                              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Order as a guest</button>
+                                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Sign In</button>
                               </div>
+                          </nav>
+                          <div class="tab-content" id="nav-tabContent">
+                              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                  
+                                  <form action="" class="mt-4">
+                                      <div class="form-floating mb-3">
+                                          <input type="text" class="form-control" id="floatingInput" placeholder="Eg: John">
+                                          <label for="floatingInput">First name</label>
+                                      </div>
+  
+                                      <div class="form-floating mb-3">
+                                          <input type="text" class="form-control" id="floatingInput" placeholder="Eg: Doe">
+                                          <label for="floatingInput">Last name</label>
+                                      </div>
+
+                                      <div class="form-floating mb-3">
+                                          <input type="email" class="form-control" id="floatingInput" placeholder="Eg: john@example.com">
+                                          <label for="floatingInput">Email address</label>
+                                      </div>
+
+                                      <h5>Create an account (options)</h5>
+                                      <p>And save time on your next order!</p>
+
+                                      <div class="form-floating mb-3">
+                                          <input type="password" class="form-control" id="floatingInput" placeholder="Eg: ^AReRPTJEwZC">
+                                          <label for="floatingInput">Password</label>
+                                      </div>
+
+                                      <div class="form-floating mb-3">
+                                          <input type="date" class="form-control" id="floatingInput" placeholder="Eg: 05/31/1970">
+                                          <label for="floatingInput">Date of birth</label>
+                                      </div>
+
+                                      <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" id="chk1">
+                                          <label class="form-check-label" for="chk1">
+                                              Receive offers from our partners
+                                          </label>
+                                      </div>
+
+                                      <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" id="chk2">
+                                          <label class="form-check-label" for="chk2">
+                                              Sign up for our newsletter
+                                              You may unsubscribe at any moment. For that purpose, please find our contact info in the legal notice.
+                                          </label>
+                                      </div>
+
+                                      <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" id="chk3">
+                                          <label class="form-check-label" for="chk3">
+                                              I agree to the terms and conditions and the privacy policy
+                                          </label>
+                                      </div>
+                                      <div class="d-flex justify-content-end">
+                                          <a href="#" class="btn btn-dark my-4" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Continue</a>
+                                      </div>
+                                      
+                                  </form>
+
+
+                              </div>
+
+                              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+
+                                  <form action="" class="mt-4">
+
+                                      <div class="form-floating mb-3">
+                                          <input type="email" class="form-control" id="floatingInput" placeholder="Eg: john@example.com">
+                                          <label for="floatingInput">Email address</label>
+                                      </div>
+
+                                      <div class="form-floating mb-3">
+                                          <input type="password" class="form-control" id="floatingInput" placeholder="Eg: ^AReRPTJEwZC">
+                                          <label for="floatingInput">Password</label>
+                                      </div>
+
+                                      <small><a href="#" class="forgot-password">Forgot your password?</a></small>
+
+                                      <div class="d-flex justify-content-end">
+                                          <a href="#" class="btn btn-dark my-4" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Continue</a>
+                                      </div>
+                                      
+                                  </form>
+                                  
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        2 Addresses
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                          <p>The selected address will be used both as your personal address (for invoice) and as your delivery address.
+                          </p>
+
+                          <form action="" class="mt-4">
+                              <div class="form-floating mb-3">
+                                  <input type="text" class="form-control" id="floatingInput" placeholder="Eg: John">
+                                  <label for="floatingInput">First name</label>
+                              </div>
+
+                              <div class="form-floating mb-3">
+                                  <input type="text" class="form-control" id="floatingInput" placeholder="Eg: Doe">
+                                  <label for="floatingInput">Last name</label>
+                              </div>
+
+                              <div class="form-floating mb-3">
+                                  <input type="text" class="form-control" id="floatingInput" placeholder="Eg:ACME Limited">
+                                  <label for="floatingInput">Company</label>
+                              </div>
+
+                              <div class="form-floating mb-3">
+                                  <input type="text" class="form-control" id="floatingInput" placeholder="Eg:123, Happy Land, London">
+                                  <label for="floatingInput">Address</label>
+                              </div>
+
+                              <div class="form-floating mb-3">
+                                  <input type="text" class="form-control" id="floatingInput" placeholder="Eg:London">
+                                  <label for="floatingInput">City</label>
+                              </div>
+
+                              <div class="form-floating mb-3">
+                                  <input type="text" class="form-control" id="floatingInput" placeholder="Eg:London">
+                                  <label for="floatingInput">Zip/Postal Code</label>
+                              </div>
+
+                              <div class="form-floating mb-3">
+                                  <input type="text" class="form-control" id="floatingInput" placeholder="Eg: United Kingdom">
+                                  <label for="floatingInput">Country</label>
+                              </div>
+
+                              <div class="form-floating mb-3">
+                                  <input type="text" class="form-control" id="floatingInput" placeholder="Eg:(+44) 2031500392">
+                                  <label for="floatingInput">Phone</label>
+                              </div>
+
                               <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                                <label class="form-check-label" for="flexRadioDefault2">
-                                  Paypal
-                                </label>
+                                  <input class="form-check-input" type="checkbox" value="" id="chk1" checked>
+                                  <label class="form-check-label" for="chk1">
+                                      Use this address for invoice too
+                                  </label>
                               </div>
 
                               <div class="d-flex justify-content-end">
-                                <a href="confirmation.html" class="btn btn-dark my-4">Complete Checkout</a>
-                            </div>
+                                  <a href="#" class="btn btn-dark my-4" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Continue</a>
+                              </div>
+                              
                           </form>
-                        </div>
                       </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-xl-4">
-                <div class="card">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item py-4">
-                            <div class="row">
-                                <div class="col-6">2 Items</div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        3 Payment
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <form action="">
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                              <label class="form-check-label" for="flexRadioDefault1">
+                                Payment on Delivery
+                              </label>
                             </div>
-                            <div class="row"><a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Show Details</a></div>
-
-
-                            <div class="collapse" id="collapseExample">
-
-                                <div class="row my-4">
-                                    <div class="col-6">
-                                        <p>Originals Kaval Windbreaker Winter Jacket 2</p>
-                                        <p>X1</p>
-                                        <p>Size: N/A</p>
-                                        <p>Color: N/A</p>
-                                    </div>
-                                    <div class="col-6 d-flex justify-content-end align-items-center">&#163;23.90</div>
-                                </div>
-
-                                <div class="row my-4">
-                                    <div class="col-6">
-                                        <p>Originals Kaval Windbreaker Winter Jacket 2</p>
-                                        <p>X1</p>
-                                        <p>Size: N/A</p>
-                                        <p>Color: N/A</p>
-                                    </div>
-                                    <div class="col-6 d-flex justify-content-end align-items-center">&#163;23.90</div>
-                                </div>
-
-                            </div>
-                            
-
-                            <div class="row">
-                                <div class="col-6">Subtotal</div>
-                                <div class="col-6 d-flex justify-content-end">&#163;23.90</div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                              <label class="form-check-label" for="flexRadioDefault2">
+                                Paypal
+                              </label>
                             </div>
 
-                            <div class="row">
-                                <div class="col-6">Shipping</div>
-                                <div class="col-6 d-flex justify-content-end">&#163;7.00</div>
-                            </div>
-                        </li>
-
-                        <li class="list-group-item py-4">
-                            <div class="row">
-                                <div class="col-6">Total (Tax Excl.)</div>
-                                <div class="col-6 d-flex justify-content-end">&#163;64.44</div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-6"><small>Taxes</small></div>
-                                <div class="col-6 d-flex justify-content-end">&#163;0.00</div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+                            <div class="d-flex justify-content-end">
+                              <a href="confirmation.html" class="btn btn-dark my-4">Complete Checkout</a>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-xl-4">
+              <div class="card">
+                  <ul class="list-group list-group-flush">
+                      <li class="list-group-item py-4">
+                          <div class="row">
+                              <div class="col-6">2 Items</div>
+                          </div>
+                          <div class="row"><a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Show Details</a></div>
 
 
+                          <div class="collapse" id="collapseExample">
+
+                              <div class="row my-4">
+                                  <div class="col-6">
+                                      <p>Originals Kaval Windbreaker Winter Jacket 2</p>
+                                      <p>X1</p>
+                                      <p>Size: N/A</p>
+                                      <p>Color: N/A</p>
+                                  </div>
+                                  <div class="col-6 d-flex justify-content-end align-items-center">&#163;23.90</div>
+                              </div>
+
+                              <div class="row my-4">
+                                  <div class="col-6">
+                                      <p>Originals Kaval Windbreaker Winter Jacket 2</p>
+                                      <p>X1</p>
+                                      <p>Size: N/A</p>
+                                      <p>Color: N/A</p>
+                                  </div>
+                                  <div class="col-6 d-flex justify-content-end align-items-center">&#163;23.90</div>
+                              </div>
+
+                          </div>
+                          
+
+                          <div class="row">
+                              <div class="col-6">Subtotal</div>
+                              <div class="col-6 d-flex justify-content-end">&#163;23.90</div>
+                          </div>
+
+                          <div class="row">
+                              <div class="col-6">Shipping</div>
+                              <div class="col-6 d-flex justify-content-end">&#163;7.00</div>
+                          </div>
+                      </li>
+
+                      <li class="list-group-item py-4">
+                          <div class="row">
+                              <div class="col-6">Total (Tax Excl.)</div>
+                              <div class="col-6 d-flex justify-content-end">&#163;64.44</div>
+                          </div>
+
+                          <div class="row">
+                              <div class="col-6"><small>Taxes</small></div>
+                              <div class="col-6 d-flex justify-content-end">&#163;0.00</div>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+          </div>
       </div>
 
-      
+
+    </div>
+
+    
 
 
-    </main>
+  </main>
 
-    <footer>
+  <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4">
+            <h3>About Us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <div class="need-help d-flex align-items-center">
+              <i class="icofont-phone"></i>
+              <div class="need-help-body">
+                <p>Need Help?</p>
+                <p>(+44)123456789</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2">
+            <h3>Information</h3>
+            <ul>
+              <li><a href="#">Delivery</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Secure Payment</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Sitemap</a></li>
+              <li><a href="#">Stores</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-2">
+            <h3>Custom Links</h3>
+            <ul>
+              <li><a href="#">Legal Notice</a></li>
+              <li><a href="#">Prices Drop</a></li>
+              <li><a href="#">New Products</a></li>
+              <li><a href="#">Best Sales</a></li>
+              <li><a href="#">Login</a></li>
+              <li><a href="#">My Account</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-4">
+            <h3>Newsletter</h3>
+            <p>
+              You may unsubscribe at any moment. For that purpose, please find our contact info in the legal notice.
+            </p>
+
+            <form action="">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Your email address" aria-label="Email address" aria-describedby="button-addon2">
+                <button class="btn btn-dark newsletter-signup" type="button" id="button-addon2">Sign up</button>
+              </div>
+            </form>
+
+            <div class="social-media-container d-flex">
+              <a href="" class="social-media-icon"><i class="bi bi-twitter"></i></a>
+              <a href="" class="social-media-icon"><i class="bi bi-facebook"></i></a>
+              <a href="" class="social-media-icon"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid bottom-container">
         <div class="container">
           <div class="row">
-            <div class="col-xl-4">
-              <h3>About Us</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-              <div class="need-help d-flex align-items-center">
-                <i class="icofont-phone"></i>
-                <div class="need-help-body">
-                  <p>Need Help?</p>
-                  <p>(+44)123456789</p>
-                </div>
-              </div>
+            <div class="col-xl-6">
+              <p>Copyright &copy; AT Telecommunications Limited. All Rights Reserved</p>
             </div>
-            <div class="col-xl-2">
-              <h3>Information</h3>
-              <ul>
-                <li><a href="#">Delivery</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Secure Payment</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Sitemap</a></li>
-                <li><a href="#">Stores</a></li>
-              </ul>
-            </div>
-            <div class="col-xl-2">
-              <h3>Custom Links</h3>
-              <ul>
-                <li><a href="#">Legal Notice</a></li>
-                <li><a href="#">Prices Drop</a></li>
-                <li><a href="#">New Products</a></li>
-                <li><a href="#">Best Sales</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">My Account</a></li>
-              </ul>
-            </div>
-            <div class="col-xl-4">
-              <h3>Newsletter</h3>
-              <p>
-                You may unsubscribe at any moment. For that purpose, please find our contact info in the legal notice.
-              </p>
-  
-              <form action="">
-                <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Your email address" aria-label="Email address" aria-describedby="button-addon2">
-                  <button class="btn btn-dark newsletter-signup" type="button" id="button-addon2">Sign up</button>
-                </div>
-              </form>
-  
-              <div class="social-media-container d-flex">
-                <a href="" class="social-media-icon"><i class="bi bi-twitter"></i></a>
-                <a href="" class="social-media-icon"><i class="bi bi-facebook"></i></a>
-                <a href="" class="social-media-icon"><i class="bi bi-instagram"></i></a>
-              </div>
+            <div class="col-xl-6 d-flex justify-content-end">
+              <img src="images/payment.png" alt="">
             </div>
           </div>
         </div>
-        <div class="container-fluid bottom-container">
-          <div class="container">
-            <div class="row">
-              <div class="col-xl-6">
-                <p>Copyright &copy; AT Telecommunications Limited. All Rights Reserved</p>
-              </div>
-              <div class="col-xl-6 d-flex justify-content-end">
-                <img src="images/payment.png" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-    </footer>
+      </div>
+  </footer>
 
 
   
 
-    <!-- JQuery File -->
-    <script src="dist/js/jquery.min.js"></script>
+  <!-- JQuery File -->
+  <script src="dist/js/jquery.min.js"></script>
 
-    <!-- Owl carousel javascript file -->
-    <script src="dist/js/owl.carousel.min.js"></script>
+  <!-- Owl carousel javascript file -->
+  <script src="dist/js/owl.carousel.min.js"></script>
 
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="dist/js/bootstrap.bundle.min.js"></script>  
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="dist/js/bootstrap.bundle.min.js"></script>  
 
-    <!-- Custom Javascipt -->
-    <script src="dist/js/custom.js"></script>
+  <!-- Custom Javascipt -->
+  <script src="dist/js/custom.js"></script>
 </body>
 </html>
 

@@ -111,15 +111,16 @@
 
 
         <div class="navbar-icons-container d-md-flex d-lg-none d-flex">
-          <button class="btn navbar-btn cart-btn"><i class="fi-rr-shopping-cart"></i><span>1</span></button>
+          <button onclick="myFunction()" class="btn navbar-btn cart-btn"><i class="fi-rr-shopping-cart"></i><span>1</span></button>
+          
           
           <div class="dropdown">
             <button class="btn navbar-btn dropdown-toggle" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false"><i class="fi-rr-user"></i></button>
 
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenu2">
               <li><a href="#" class="dropdown-item" type="button">My account</a></li>
-              <li><a href="#" class="dropdown-item" type="button">Checkout</a></li>
-              <li><a href="#" class="dropdown-item" type="button">Sign in</a></li>
+              <li><a href="checkout.html" class="dropdown-item" type="button">Checkout</a></li>
+              <li><a href="login.html" class="dropdown-item" type="button">Sign in</a></li>
             </ul>
           </div>
         </div>
@@ -132,7 +133,7 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                 Electronics <i class="icofont-thin-down"></i>
+                Electronics <i class="icofont-thin-down"></i>
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -142,7 +143,7 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                 Audio & Video <i class="icofont-thin-down"></i>
+                Audio & Video <i class="icofont-thin-down"></i>
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -152,7 +153,7 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                 Video Games <i class="icofont-thin-down"></i>
+                Video Games <i class="icofont-thin-down"></i>
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -162,7 +163,7 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                 Camera & Photo <i class="icofont-thin-down"></i>
+                Camera & Photo <i class="icofont-thin-down"></i>
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -180,226 +181,226 @@
 
   </header>
 
-    <main class="confirmation-page">
+  <main class="confirmation-page">
 
-      <div class="container py-5">
-        <h3 class="mb-4">Your Order Is Confirmed</h3>
-        <p class="mb-3">An email has been sent to the test@gmail.com address. You can also <a href="#">download your invoice</a></p>
+    <div class="container py-5">
+      <h3 class="mb-4">Your Order Is Confirmed</h3>
+      <p class="mb-3">An email has been sent to the test@gmail.com address. You can also <a href="#">download your invoice</a></p>
 
-        <h4>Order Items</h4>
-
-
-        <div class="card border-0 mb-4">
-            <ul class="list-group list-group-flush order-items-container">
-
-              <li class="list-group-item order-item">
-
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-4">
-                                <img src="images/item.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="col-8 d-flex align-items-center justify-content-center">
-                                <span class="product-name">Originals Kaval Windbreaker Winter Jacket 2</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 d-flex align-items-stretch p-0">
-                        <div class="row d-flex w-100 m-0">
-                            <div class="col-4 d-flex align-items-center justify-content-center"><span class="unit-price">&#163;80.00</span></div>
-                            <div class="col-4 d-flex align-items-center justify-content-center"><span class="quantity">1</span></div>
-                            <div class="col-4 d-flex align-items-center justify-content-end"><span class="product-total-price">&#163;80.00</span></div>
-                        </div>
-                    </div>
-                </div>
-
-              </li>
+      <h4>Order Items</h4>
 
 
-              <li class="list-group-item order-item">
+      <div class="card border-0 mb-4">
+          <ul class="list-group list-group-flush order-items-container">
 
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-4">
-                                <img src="images/item.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="col-8 d-flex align-items-center justify-content-center">
-                                <span class="product-name">Originals Kaval Windbreaker Winter Jacket 2</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 d-flex align-items-stretch p-0">
-                        <div class="row d-flex w-100 m-0">
-                            <div class="col-4 d-flex align-items-center justify-content-center"><span class="unit-price">&#163;80.00</span></div>
-                            <div class="col-4 d-flex align-items-center justify-content-center"><span class="quantity">1</span></div>
-                            <div class="col-4 d-flex align-items-center justify-content-end"><span class="product-total-price">&#163;80.00</span></div>
-                        </div>
-                    </div>
-                </div>
+            <li class="list-group-item order-item">
 
-              </li>
-
-
-            </ul>
-        </div>
-
-        
-        <div class="card border-0">
-            <ul class="list-group list-group-flush order-cost-summary">
-              <li class="list-group-item border-0 ps-0">
-                  <div class="row">
-                      <div class="col-6">Subtotal</div>
-                      <div class="col-6 d-flex justify-content-end">&#163;80.00</div>
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="row">
+                          <div class="col-4">
+                              <img src="images/item.jpg" class="img-fluid" alt="">
+                          </div>
+                          <div class="col-8 d-flex align-items-center justify-content-center">
+                              <span class="product-name">Originals Kaval Windbreaker Winter Jacket 2</span>
+                          </div>
+                      </div>
                   </div>
-              </li>
-              <li class="list-group-item border-0 ps-0">
-                <div class="row">
-                    <div class="col-6">Shipping and handling</div>
-                    <div class="col-6 d-flex justify-content-end">&#163;7.00</div>
-                </div>
-              </li>
-              <li class="list-group-item border-0 ps-0">
-                <div class="row">
-                    <div class="col-6">Tax</div>
-                    <div class="col-6 d-flex justify-content-end">&#163;0.00</div>
-                </div>
-              </li>
-              <li class="list-group-item border-0 ps-0 order-cost-summary-total">
-                <div class="row">
-                    <div class="col-6">TOTAL (tax excl.)</div>
-                    <div class="col-6 d-flex justify-content-end">&#163;36.00</div>
-                </div>
-              </li>
-            </ul>
-        </div>
-
-        <h4>Order Details</h4>
-        <div class="card border-0">
-            <ul class="list-group list-group-flush order-details">
-              <li class="list-group-item border-0 px-0">
-                  <div class="row">
-                      <div class="col-6">Order reference</div>
-                      <div class="col-6 d-flex justify-content-end">CCTOHTKHD</div>
+                  <div class="col-md-6 d-flex align-items-stretch p-0">
+                      <div class="row d-flex w-100 m-0">
+                          <div class="col-4 d-flex align-items-center justify-content-center"><span class="unit-price">&#163;80.00</span></div>
+                          <div class="col-4 d-flex align-items-center justify-content-center"><span class="quantity">1</span></div>
+                          <div class="col-4 d-flex align-items-center justify-content-end"><span class="product-total-price">&#163;80.00</span></div>
+                      </div>
                   </div>
-              </li>
-              <li class="list-group-item border-0 px-0">
-                <div class="row">
-                    <div class="col-6">Payment method</div>
-                    <div class="col-6 d-flex justify-content-end">Cash on delivery (COD)</div>
-                </div>
-              </li>
-              <li class="list-group-item border-0 px-0">
-                <div class="row">
-                    <div class="col-6">Shipping method</div>
-                    <div class="col-6 d-flex justify-content-end">My carrier. Delivery next day.</div>
-                </div>
-              </li>
-              <li class="list-group-item border-0 px-0">
-                <div class="row">
-                    <div class="col-6">TOTAL (tax excl.)</div>
-                    <div class="col-6 d-flex justify-content-end">&#163;36.00</div>
-                </div>
-              </li>
-            </ul>
-        </div>
+              </div>
 
-        <p>For any questions or for further information, please contact our <a href="contact.html">customer support</a>.</p>
+            </li>
 
 
+            <li class="list-group-item order-item">
+
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="row">
+                          <div class="col-4">
+                              <img src="images/item.jpg" class="img-fluid" alt="">
+                          </div>
+                          <div class="col-8 d-flex align-items-center justify-content-center">
+                              <span class="product-name">Originals Kaval Windbreaker Winter Jacket 2</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 d-flex align-items-stretch p-0">
+                      <div class="row d-flex w-100 m-0">
+                          <div class="col-4 d-flex align-items-center justify-content-center"><span class="unit-price">&#163;80.00</span></div>
+                          <div class="col-4 d-flex align-items-center justify-content-center"><span class="quantity">1</span></div>
+                          <div class="col-4 d-flex align-items-center justify-content-end"><span class="product-total-price">&#163;80.00</span></div>
+                      </div>
+                  </div>
+              </div>
+
+            </li>
+
+
+          </ul>
       </div>
 
       
+      <div class="card border-0">
+          <ul class="list-group list-group-flush order-cost-summary">
+            <li class="list-group-item border-0 ps-0">
+                <div class="row">
+                    <div class="col-6">Subtotal</div>
+                    <div class="col-6 d-flex justify-content-end">&#163;80.00</div>
+                </div>
+            </li>
+            <li class="list-group-item border-0 ps-0">
+              <div class="row">
+                  <div class="col-6">Shipping and handling</div>
+                  <div class="col-6 d-flex justify-content-end">&#163;7.00</div>
+              </div>
+            </li>
+            <li class="list-group-item border-0 ps-0">
+              <div class="row">
+                  <div class="col-6">Tax</div>
+                  <div class="col-6 d-flex justify-content-end">&#163;0.00</div>
+              </div>
+            </li>
+            <li class="list-group-item border-0 ps-0 order-cost-summary-total">
+              <div class="row">
+                  <div class="col-6">TOTAL (tax excl.)</div>
+                  <div class="col-6 d-flex justify-content-end">&#163;36.00</div>
+              </div>
+            </li>
+          </ul>
+      </div>
+
+      <h4>Order Details</h4>
+      <div class="card border-0">
+          <ul class="list-group list-group-flush order-details">
+            <li class="list-group-item border-0 px-0">
+                <div class="row">
+                    <div class="col-6">Order reference</div>
+                    <div class="col-6 d-flex justify-content-end">CCTOHTKHD</div>
+                </div>
+            </li>
+            <li class="list-group-item border-0 px-0">
+              <div class="row">
+                  <div class="col-6">Payment method</div>
+                  <div class="col-6 d-flex justify-content-end">Cash on delivery (COD)</div>
+              </div>
+            </li>
+            <li class="list-group-item border-0 px-0">
+              <div class="row">
+                  <div class="col-6">Shipping method</div>
+                  <div class="col-6 d-flex justify-content-end">My carrier. Delivery next day.</div>
+              </div>
+            </li>
+            <li class="list-group-item border-0 px-0">
+              <div class="row">
+                  <div class="col-6">TOTAL (tax excl.)</div>
+                  <div class="col-6 d-flex justify-content-end">&#163;36.00</div>
+              </div>
+            </li>
+          </ul>
+      </div>
+
+      <p>For any questions or for further information, please contact our <a href="contact.html">customer support</a>.</p>
 
 
-    </main>
+    </div>
 
-    <footer>
+    
+
+
+  </main>
+
+  <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4">
+            <h3>About Us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <div class="need-help d-flex align-items-center">
+              <i class="icofont-phone"></i>
+              <div class="need-help-body">
+                <p>Need Help?</p>
+                <p>(+44)123456789</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2">
+            <h3>Information</h3>
+            <ul>
+              <li><a href="#">Delivery</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Secure Payment</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Sitemap</a></li>
+              <li><a href="#">Stores</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-2">
+            <h3>Custom Links</h3>
+            <ul>
+              <li><a href="#">Legal Notice</a></li>
+              <li><a href="#">Prices Drop</a></li>
+              <li><a href="#">New Products</a></li>
+              <li><a href="#">Best Sales</a></li>
+              <li><a href="#">Login</a></li>
+              <li><a href="#">My Account</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-4">
+            <h3>Newsletter</h3>
+            <p>
+              You may unsubscribe at any moment. For that purpose, please find our contact info in the legal notice.
+            </p>
+
+            <form action="">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Your email address" aria-label="Email address" aria-describedby="button-addon2">
+                <button class="btn btn-dark newsletter-signup" type="button" id="button-addon2">Sign up</button>
+              </div>
+            </form>
+
+            <div class="social-media-container d-flex">
+              <a href="" class="social-media-icon"><i class="bi bi-twitter"></i></a>
+              <a href="" class="social-media-icon"><i class="bi bi-facebook"></i></a>
+              <a href="" class="social-media-icon"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid bottom-container">
         <div class="container">
           <div class="row">
-            <div class="col-xl-4">
-              <h3>About Us</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-              <div class="need-help d-flex align-items-center">
-                <i class="icofont-phone"></i>
-                <div class="need-help-body">
-                  <p>Need Help?</p>
-                  <p>(+44)123456789</p>
-                </div>
-              </div>
+            <div class="col-xl-6">
+              <p>Copyright &copy; AT Telecommunications Limited. All Rights Reserved</p>
             </div>
-            <div class="col-xl-2">
-              <h3>Information</h3>
-              <ul>
-                <li><a href="#">Delivery</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Secure Payment</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Sitemap</a></li>
-                <li><a href="#">Stores</a></li>
-              </ul>
-            </div>
-            <div class="col-xl-2">
-              <h3>Custom Links</h3>
-              <ul>
-                <li><a href="#">Legal Notice</a></li>
-                <li><a href="#">Prices Drop</a></li>
-                <li><a href="#">New Products</a></li>
-                <li><a href="#">Best Sales</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">My Account</a></li>
-              </ul>
-            </div>
-            <div class="col-xl-4">
-              <h3>Newsletter</h3>
-              <p>
-                You may unsubscribe at any moment. For that purpose, please find our contact info in the legal notice.
-              </p>
-  
-              <form action="">
-                <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Your email address" aria-label="Email address" aria-describedby="button-addon2">
-                  <button class="btn btn-dark newsletter-signup" type="button" id="button-addon2">Sign up</button>
-                </div>
-              </form>
-  
-              <div class="social-media-container d-flex">
-                <a href="" class="social-media-icon"><i class="bi bi-twitter"></i></a>
-                <a href="" class="social-media-icon"><i class="bi bi-facebook"></i></a>
-                <a href="" class="social-media-icon"><i class="bi bi-instagram"></i></a>
-              </div>
+            <div class="col-xl-6 d-flex justify-content-end">
+              <img src="images/payment.png" alt="">
             </div>
           </div>
         </div>
-        <div class="container-fluid bottom-container">
-          <div class="container">
-            <div class="row">
-              <div class="col-xl-6">
-                <p>Copyright &copy; AT Telecommunications Limited. All Rights Reserved</p>
-              </div>
-              <div class="col-xl-6 d-flex justify-content-end">
-                <img src="images/payment.png" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-    </footer>
+      </div>
+  </footer>
 
 
   
 
-    <!-- JQuery File -->
-    <script src="dist/js/jquery.min.js"></script>
+  <!-- JQuery File -->
+  <script src="dist/js/jquery.min.js"></script>
 
-    <!-- Owl carousel javascript file -->
-    <script src="dist/js/owl.carousel.min.js"></script>
+  <!-- Owl carousel javascript file -->
+  <script src="dist/js/owl.carousel.min.js"></script>
 
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="dist/js/bootstrap.bundle.min.js"></script>  
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="dist/js/bootstrap.bundle.min.js"></script>  
 
-    <!-- Custom Javascipt -->
-    <script src="dist/js/custom.js"></script>
+  <!-- Custom Javascipt -->
+  <script src="dist/js/custom.js"></script>
 </body>
 </html>
 

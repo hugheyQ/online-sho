@@ -1,3 +1,7 @@
+function myFunction() {
+	location.href = "cart.html";
+}
+
 $(document).ready(function () {
 	$(".homepage-top-carousel").owlCarousel({
 		loop: true,

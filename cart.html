@@ -111,15 +111,16 @@
 
 
         <div class="navbar-icons-container d-md-flex d-lg-none d-flex">
-          <button class="btn navbar-btn cart-btn"><i class="fi-rr-shopping-cart"></i><span>1</span></button>
+          <button onclick="myFunction()" class="btn navbar-btn cart-btn"><i class="fi-rr-shopping-cart"></i><span>1</span></button>
+          
           
           <div class="dropdown">
             <button class="btn navbar-btn dropdown-toggle" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false"><i class="fi-rr-user"></i></button>
 
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenu2">
               <li><a href="#" class="dropdown-item" type="button">My account</a></li>
-              <li><a href="#" class="dropdown-item" type="button">Checkout</a></li>
-              <li><a href="#" class="dropdown-item" type="button">Sign in</a></li>
+              <li><a href="checkout.html" class="dropdown-item" type="button">Checkout</a></li>
+              <li><a href="login.html" class="dropdown-item" type="button">Sign in</a></li>
             </ul>
           </div>
         </div>
@@ -132,7 +133,7 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                 Electronics <i class="icofont-thin-down"></i>
+                Electronics <i class="icofont-thin-down"></i>
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -142,7 +143,7 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                 Audio & Video <i class="icofont-thin-down"></i>
+                Audio & Video <i class="icofont-thin-down"></i>
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -152,7 +153,7 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                 Video Games <i class="icofont-thin-down"></i>
+                Video Games <i class="icofont-thin-down"></i>
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -162,7 +163,7 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                 Camera & Photo <i class="icofont-thin-down"></i>
+                Camera & Photo <i class="icofont-thin-down"></i>
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -180,210 +181,210 @@
 
   </header>
 
-    <main class="cart-page">
+  <main class="cart-page">
 
-      <div class="container py-5">
-        <h1>Shopping Cart</h1>
+    <div class="container py-5">
+      <h1>Shopping Cart</h1>
 
-        <div class="row">
-            <div class="col-xl-8">
+      <div class="row">
+          <div class="col-xl-8">
 
-                <div class="row d-flex align-items-center cart-item py-4">
-                    <div class="col-3">
-                        <img src="images/item.jpg" alt="" class="img-fluid">
-                    </div>
-                    <div class="col-9">
-                        <div class="row">
-                            <div class="col-xl-5">
-                                <div class="product-name">
-                                    <a href="#">Juicy Couture Juicy Quilted Terry Track Jacket 2</a>
-                                </div>
-                                <div class="price-block">
-                                    <span class="new-price">&#163;80.00</span>
-                                    <span class="old-price">&#163;100.00</span>
-                                    <span class="badge bg-dark discount-percent">-20%</span>
-                                </div>
-                                <span class="product-size"><span>Size:</span> <span>N/A</span></span>
-                            </div>
-                            <div class="col-xl-7">
-                                <div class="row d-flex align-items-center">
-                                    <div class="col-4">
-                                        <input type="number" min="1" max="100" value="1">
-                                    </div>
-                                    <div class="col-4">
-                                        <span class="price">&#163;80.00</span>
-                                    </div>
-                                    <div class="col-4">
-                                        <a href="#" class="delete"><i class="bi bi-trash"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              <div class="row d-flex align-items-center cart-item py-4">
+                  <div class="col-3">
+                      <img src="images/item.jpg" alt="" class="img-fluid">
+                  </div>
+                  <div class="col-9">
+                      <div class="row">
+                          <div class="col-xl-5">
+                              <div class="product-name">
+                                  <a href="#">Juicy Couture Juicy Quilted Terry Track Jacket 2</a>
+                              </div>
+                              <div class="price-block">
+                                  <span class="new-price">&#163;80.00</span>
+                                  <span class="old-price">&#163;100.00</span>
+                                  <span class="badge bg-dark discount-percent">-20%</span>
+                              </div>
+                              <span class="product-size"><span>Size:</span> <span>N/A</span></span>
+                          </div>
+                          <div class="col-xl-7">
+                              <div class="row d-flex align-items-center">
+                                  <div class="col-4">
+                                      <input type="number" min="1" max="100" value="1">
+                                  </div>
+                                  <div class="col-4">
+                                      <span class="price">&#163;80.00</span>
+                                  </div>
+                                  <div class="col-4">
+                                      <a href="#" class="delete"><i class="bi bi-trash"></i></a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
 
-                <div class="row d-flex align-items-center cart-item py-4">
-                    <div class="col-3">
-                        <img src="images/item.jpg" alt="" class="img-fluid">
-                    </div>
-                    <div class="col-9">
-                        <div class="row">
-                            <div class="col-xl-5">
-                                <div class="product-name">
-                                    <a href="#">Juicy Couture Juicy Quilted Terry Track Jacket 2</a>
-                                </div>
-                                <div class="price-block">
-                                    <span class="new-price">&#163;80.00</span>
-                                    <span class="old-price">&#163;100.00</span>
-                                    <span class="badge bg-dark discount-percent">-20%</span>
-                                </div>
-                                <span class="product-size"><span>Size:</span> <span>N/A</span></span>
-                            </div>
-                            <div class="col-xl-7">
-                                <div class="row d-flex align-items-center">
-                                    <div class="col-4">
-                                        <input type="number" min="1" max="100" value="1">
-                                    </div>
-                                    <div class="col-4">
-                                        <span class="price">&#163;80.00</span>
-                                    </div>
-                                    <div class="col-4">
-                                        <a href="#" class="delete"><i class="bi bi-trash"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              <div class="row d-flex align-items-center cart-item py-4">
+                  <div class="col-3">
+                      <img src="images/item.jpg" alt="" class="img-fluid">
+                  </div>
+                  <div class="col-9">
+                      <div class="row">
+                          <div class="col-xl-5">
+                              <div class="product-name">
+                                  <a href="#">Juicy Couture Juicy Quilted Terry Track Jacket 2</a>
+                              </div>
+                              <div class="price-block">
+                                  <span class="new-price">&#163;80.00</span>
+                                  <span class="old-price">&#163;100.00</span>
+                                  <span class="badge bg-dark discount-percent">-20%</span>
+                              </div>
+                              <span class="product-size"><span>Size:</span> <span>N/A</span></span>
+                          </div>
+                          <div class="col-xl-7">
+                              <div class="row d-flex align-items-center">
+                                  <div class="col-4">
+                                      <input type="number" min="1" max="100" value="1">
+                                  </div>
+                                  <div class="col-4">
+                                      <span class="price">&#163;80.00</span>
+                                  </div>
+                                  <div class="col-4">
+                                      <a href="#" class="delete"><i class="bi bi-trash"></i></a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
 
-                <a href="index.html" class="btn btn-dark my-4">Continue Shopping</a>
+              <a href="index.html" class="btn btn-dark my-4">Continue Shopping</a>
 
 
-            </div>
-            <div class="col-xl-4">
-                <div class="card cart-overview">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item py-4">
-                            <div class="row">
-                                <div class="col-6">2 Items</div>
-                                <div class="col-6 d-flex justify-content-end">&#163;80.00</div>
-                            </div>
+          </div>
+          <div class="col-xl-4">
+              <div class="card cart-overview">
+                  <ul class="list-group list-group-flush">
+                      <li class="list-group-item py-4">
+                          <div class="row">
+                              <div class="col-6">2 Items</div>
+                              <div class="col-6 d-flex justify-content-end">&#163;80.00</div>
+                          </div>
 
-                            <div class="row">
-                                <div class="col-6">Shipping</div>
-                                <div class="col-6 d-flex justify-content-end">&#163;7.00</div>
-                            </div>
-                        </li>
+                          <div class="row">
+                              <div class="col-6">Shipping</div>
+                              <div class="col-6 d-flex justify-content-end">&#163;7.00</div>
+                          </div>
+                      </li>
 
-                        <li class="list-group-item py-4">
-                            <div class="row">
-                                <div class="col-6">Total (Tax Excl.)</div>
-                                <div class="col-6 d-flex justify-content-end">&#163;64.44</div>
-                            </div>
+                      <li class="list-group-item py-4">
+                          <div class="row">
+                              <div class="col-6">Total (Tax Excl.)</div>
+                              <div class="col-6 d-flex justify-content-end">&#163;64.44</div>
+                          </div>
 
-                            <div class="row">
-                                <div class="col-6"><small>Taxes</small></div>
-                                <div class="col-6 d-flex justify-content-end">&#163;0.00</div>
-                            </div>
-                        </li>
-                        <li class="list-group-item py-4 text-center"><a href="checkout.html" class="btn btn-dark">Proceed To Checkout</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
+                          <div class="row">
+                              <div class="col-6"><small>Taxes</small></div>
+                              <div class="col-6 d-flex justify-content-end">&#163;0.00</div>
+                          </div>
+                      </li>
+                      <li class="list-group-item py-4 text-center"><a href="checkout.html" class="btn btn-dark">Proceed To Checkout</a></li>
+                  </ul>
+              </div>
+          </div>
       </div>
 
-      
+    </div>
+
+    
 
 
-    </main>
+  </main>
 
-    <footer>
+  <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4">
+            <h3>About Us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <div class="need-help d-flex align-items-center">
+              <i class="icofont-phone"></i>
+              <div class="need-help-body">
+                <p>Need Help?</p>
+                <p>(+44)123456789</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2">
+            <h3>Information</h3>
+            <ul>
+              <li><a href="#">Delivery</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Secure Payment</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Sitemap</a></li>
+              <li><a href="#">Stores</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-2">
+            <h3>Custom Links</h3>
+            <ul>
+              <li><a href="#">Legal Notice</a></li>
+              <li><a href="#">Prices Drop</a></li>
+              <li><a href="#">New Products</a></li>
+              <li><a href="#">Best Sales</a></li>
+              <li><a href="#">Login</a></li>
+              <li><a href="#">My Account</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-4">
+            <h3>Newsletter</h3>
+            <p>
+              You may unsubscribe at any moment. For that purpose, please find our contact info in the legal notice.
+            </p>
+
+            <form action="">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Your email address" aria-label="Email address" aria-describedby="button-addon2">
+                <button class="btn btn-dark newsletter-signup" type="button" id="button-addon2">Sign up</button>
+              </div>
+            </form>
+
+            <div class="social-media-container d-flex">
+              <a href="" class="social-media-icon"><i class="bi bi-twitter"></i></a>
+              <a href="" class="social-media-icon"><i class="bi bi-facebook"></i></a>
+              <a href="" class="social-media-icon"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid bottom-container">
         <div class="container">
           <div class="row">
-            <div class="col-xl-4">
-              <h3>About Us</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-              <div class="need-help d-flex align-items-center">
-                <i class="icofont-phone"></i>
-                <div class="need-help-body">
-                  <p>Need Help?</p>
-                  <p>(+44)123456789</p>
-                </div>
-              </div>
+            <div class="col-xl-6">
+              <p>Copyright &copy; AT Telecommunications Limited. All Rights Reserved</p>
             </div>
-            <div class="col-xl-2">
-              <h3>Information</h3>
-              <ul>
-                <li><a href="#">Delivery</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Secure Payment</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Sitemap</a></li>
-                <li><a href="#">Stores</a></li>
-              </ul>
-            </div>
-            <div class="col-xl-2">
-              <h3>Custom Links</h3>
-              <ul>
-                <li><a href="#">Legal Notice</a></li>
-                <li><a href="#">Prices Drop</a></li>
-                <li><a href="#">New Products</a></li>
-                <li><a href="#">Best Sales</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">My Account</a></li>
-              </ul>
-            </div>
-            <div class="col-xl-4">
-              <h3>Newsletter</h3>
-              <p>
-                You may unsubscribe at any moment. For that purpose, please find our contact info in the legal notice.
-              </p>
-  
-              <form action="">
-                <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Your email address" aria-label="Email address" aria-describedby="button-addon2">
-                  <button class="btn btn-dark newsletter-signup" type="button" id="button-addon2">Sign up</button>
-                </div>
-              </form>
-  
-              <div class="social-media-container d-flex">
-                <a href="" class="social-media-icon"><i class="bi bi-twitter"></i></a>
-                <a href="" class="social-media-icon"><i class="bi bi-facebook"></i></a>
-                <a href="" class="social-media-icon"><i class="bi bi-instagram"></i></a>
-              </div>
+            <div class="col-xl-6 d-flex justify-content-end">
+              <img src="images/payment.png" alt="">
             </div>
           </div>
         </div>
-        <div class="container-fluid bottom-container">
-          <div class="container">
-            <div class="row">
-              <div class="col-xl-6">
-                <p>Copyright &copy; AT Telecommunications Limited. All Rights Reserved</p>
-              </div>
-              <div class="col-xl-6 d-flex justify-content-end">
-                <img src="images/payment.png" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-    </footer>
+      </div>
+  </footer>
 
 
   
 
-    <!-- JQuery File -->
-    <script src="dist/js/jquery.min.js"></script>
+  <!-- JQuery File -->
+  <script src="dist/js/jquery.min.js"></script>
 
-    <!-- Owl carousel javascript file -->
-    <script src="dist/js/owl.carousel.min.js"></script>
+  <!-- Owl carousel javascript file -->
+  <script src="dist/js/owl.carousel.min.js"></script>
 
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="dist/js/bootstrap.bundle.min.js"></script>  
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="dist/js/bootstrap.bundle.min.js"></script>  
 
-    <!-- Custom Javascipt -->
-    <script src="dist/js/custom.js"></script>
+  <!-- Custom Javascipt -->
+  <script src="dist/js/custom.js"></script>
 </body>
 </html>
 
