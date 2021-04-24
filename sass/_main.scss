@@ -1,165 +1,96 @@
 main {
-	.benefit-container {
-		i {
-			font-size: 4em;
-			margin-right: 0.2em;
-			color: #888888;
+	&.home-page {
+		h2 {
+			position: relative;
+			border-bottom: 2px solid #2064da;
+			display: inline-block;
+			padding-bottom: 15px;
+			z-index: 4;
+			font-size: 24px;
+			color: #1d1d1d;
+			font-weight: 600;
 		}
 
-		.benefit-body {
-			h5 {
-				font-size: 16px;
-				font-weight: 600;
-				color: #1d1d1d;
-				margin-bottom: 0.3em;
-			}
+		hr {
+			margin-top: -1px;
+			z-index: -1;
+			height: 0.5px;
+			opacity: 0.1;
+		}
 
-			p {
-				font-size: 13px;
-				font-weight: 400;
+		.benefit-container {
+			i {
+				font-size: 4em;
+				margin-right: 0.2em;
 				color: #888888;
 			}
-		}
-	}
 
-	.products {
-		.products-carousel {
-			a {
-				text-decoration: none;
-				color: inherit;
+			.benefit-body {
+				h5 {
+					font-size: 16px;
+					font-weight: 600;
+					color: #1d1d1d;
+					margin-bottom: 0.3em;
+				}
 
-				&:hover .search-icon {
-					opacity: 1;
+				p {
+					font-size: 13px;
+					font-weight: 400;
+					color: #888888;
 				}
 			}
-			.card {
-				border: 1px solid white;
-				transition: border 300ms ease-in-out;
-				position: relative;
+		}
 
-				&:hover {
-					border: 1px solid #ebebeb;
+		.popular-categories {
+			.card-body {
+				padding-top: 0;
+
+				.card-title {
+					color: #47494a;
+					font-size: 16px;
+					font-weight: 600;
+					text-transform: capitalize;
 				}
 
-				.status {
-					position: absolute;
-					left: 1rem;
-					top: 1rem;
-				}
+				ul {
+					list-style-type: none;
+					margin-bottom: 1.5em;
+					margin-top: 1em;
+					padding: 0;
 
-				.search-icon {
-					position: absolute;
-					right: 1rem;
-					top: 1rem;
-					opacity: 0;
-					transition: opacity 300ms ease-in-out;
-				}
+					li {
+						&:not(:last-child) {
+							margin-bottom: 0.3em;
+						}
 
-				.card-body {
-					.card-title {
-						font-size: 13px;
-						color: #146cda;
-						font-weight: 700;
-						text-transform: uppercase;
-					}
-
-					.card-text {
-						color: #47494a;
-						font-size: 14px;
-						font-weight: 400;
-						text-transform: capitalize;
-						margin-bottom: 0.5em;
-					}
-
-					.rating {
-						margin-bottom: 0.7em;
-					}
-
-					.price {
-						color: #1d1d1d;
-						font-size: 16px;
-						font-weight: 600;
-
-						&.ammended {
-							text-decoration: line-through;
-							color: grey;
-							font-weight: 400;
+						a {
+							color: #888;
+							text-decoration: none;
 							font-size: 14px;
-						}
-					}
+							font-weight: 400;
+							text-transform: capitalize;
+							transition: color 500ms ease-in-out;
 
-					.new-price {
-						margin: 0 0.2em;
-						color: red;
-						font-size: 16px;
-						font-weight: 600;
-					}
-				}
-			}
-		}
-	}
-
-	.popular-categories {
-		.card-body {
-			padding-top: 0;
-
-			.card-title {
-				color: #47494a;
-				font-size: 16px;
-				font-weight: 600;
-				text-transform: capitalize;
-			}
-
-			ul {
-				list-style-type: none;
-				margin-bottom: 1.5em;
-				margin-top: 1em;
-				padding: 0;
-
-				li {
-					&:not(:last-child) {
-						margin-bottom: 0.3em;
-					}
-
-					a {
-						color: #888;
-						text-decoration: none;
-						font-size: 14px;
-						font-weight: 400;
-						text-transform: capitalize;
-						transition: color 500ms ease-in-out;
-
-						&:hover {
-							color: #146cda;
+							&:hover {
+								color: #146cda;
+							}
 						}
 					}
 				}
-			}
 
-			.view-all {
-				text-transform: uppercase;
-				background-color: #f5f5f5;
-				font-size: 13px;
-				font-weight: 400;
-				transition: all 500ms ease-in-out;
+				.view-all {
+					text-transform: uppercase;
+					background-color: #f5f5f5;
+					font-size: 13px;
+					font-weight: 400;
+					transition: all 500ms ease-in-out;
 
-				&:hover {
-					background-color: #146cda;
-					color: white;
+					&:hover {
+						background-color: #146cda;
+						color: white;
+					}
 				}
 			}
-		}
-	}
-
-	.btn-dark {
-		font-size: 14px;
-		font-weight: 400;
-		padding: 10px 25px;
-		transition: all 300ms ease-in-out;
-		border: none;
-
-		&:hover {
-			background-color: #146cda;
 		}
 	}
 
@@ -528,6 +459,88 @@ main {
 								color: white;
 							}
 						}
+					}
+				}
+			}
+		}
+	}
+
+	&.login-page {
+		.left-section {
+			background: rgb(54, 144, 226);
+			background: linear-gradient(
+				45deg,
+				rgba(54, 144, 226, 1) 35%,
+				rgba(45, 102, 222, 1) 100%
+			);
+
+			.left-section-inner {
+				text-align: center;
+				color: white;
+				max-width: 500px;
+
+				h2 {
+					font-size: 24px;
+					font-weight: 700;
+					text-transform: capitalize;
+					margin-bottom: 0.9em;
+				}
+
+				p {
+					line-height: 25px;
+					margin-bottom: 1em;
+				}
+
+				.signup-btn {
+					border: 1px solid white;
+					color: white;
+					padding: 0.8em 1.5em;
+					text-transform: uppercase;
+					transition: all 300ms ease-in-out;
+
+					&:hover {
+						background-color: white;
+						color: #146cda;
+					}
+				}
+			}
+		}
+
+		.right-section {
+			padding: 4em;
+
+			.right-section-inner {
+				h2 {
+					font-size: 29px;
+					font-weight: 700;
+					text-transform: capitalize;
+					margin-bottom: 0.9em;
+					line-height: 44px;
+				}
+
+				input[type="text"],
+				input[type="password"] {
+					border-top: none;
+					border-left: none;
+					border-right: none;
+					border-radius: 0;
+
+					&:focus {
+						box-shadow: none;
+					}
+				}
+
+				.signin-btn {
+					border: 1px solid #3670e2;
+					background-color: #3670e2;
+					color: white;
+					padding: 0.8em 1.5em;
+					text-transform: uppercase;
+					transition: all 300ms ease-in-out;
+
+					&:hover {
+						background-color: #2d66de;
+						color: white;
 					}
 				}
 			}

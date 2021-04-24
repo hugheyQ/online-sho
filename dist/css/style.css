@@ -74,22 +74,88 @@ section {
   padding-bottom: 2em;
 }
 
-section h2 {
+.products .products-carousel a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.products .products-carousel a:hover .search-icon {
+  opacity: 1;
+}
+
+.products .products-carousel .card {
+  border: 1px solid white;
+  transition: border 300ms ease-in-out;
   position: relative;
-  border-bottom: 2px solid #2064da;
-  display: inline-block;
-  padding-bottom: 15px;
-  z-index: 4;
-  font-size: 24px;
+}
+
+.products .products-carousel .card:hover {
+  border: 1px solid #ebebeb;
+}
+
+.products .products-carousel .card .status {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+}
+
+.products .products-carousel .card .search-icon {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+.products .products-carousel .card .card-body .card-title {
+  font-size: 13px;
+  color: #146cda;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.products .products-carousel .card .card-body .card-text {
+  color: #47494a;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-bottom: 0.5em;
+}
+
+.products .products-carousel .card .card-body .rating {
+  margin-bottom: 0.7em;
+}
+
+.products .products-carousel .card .card-body .price {
   color: #1d1d1d;
+  font-size: 16px;
   font-weight: 600;
 }
 
-section hr {
-  margin-top: -1px;
-  z-index: -1;
-  height: 0.5px;
-  opacity: 0.1;
+.products .products-carousel .card .card-body .price.ammended {
+  text-decoration: line-through;
+  color: grey;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.products .products-carousel .card .card-body .new-price {
+  margin: 0 0.2em;
+  color: red;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.btn-dark {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 25px;
+  transition: all 300ms ease-in-out;
+  border: none;
+}
+
+.btn-dark:hover {
+  background-color: #146cda;
 }
 
 .owl-carousel {
@@ -134,16 +200,9 @@ section hr {
   opacity: 1;
 }
 
-.btn-dark {
-  font-size: 14px;
-  font-weight: 400;
-  padding: 10px 25px;
-  transition: all 300ms ease-in-out;
-  border: none;
-}
-
-.btn-dark:hover {
-  background-color: #146cda;
+img {
+  width: 100%;
+  height: auto;
 }
 
 header .top {
@@ -373,120 +432,66 @@ header nav .navbar-nav .active {
   }
 }
 
-main .benefit-container i {
+main.home-page h2 {
+  position: relative;
+  border-bottom: 2px solid #2064da;
+  display: inline-block;
+  padding-bottom: 15px;
+  z-index: 4;
+  font-size: 24px;
+  color: #1d1d1d;
+  font-weight: 600;
+}
+
+main.home-page hr {
+  margin-top: -1px;
+  z-index: -1;
+  height: 0.5px;
+  opacity: 0.1;
+}
+
+main.home-page .benefit-container i {
   font-size: 4em;
   margin-right: 0.2em;
   color: #888888;
 }
 
-main .benefit-container .benefit-body h5 {
+main.home-page .benefit-container .benefit-body h5 {
   font-size: 16px;
   font-weight: 600;
   color: #1d1d1d;
   margin-bottom: 0.3em;
 }
 
-main .benefit-container .benefit-body p {
+main.home-page .benefit-container .benefit-body p {
   font-size: 13px;
   font-weight: 400;
   color: #888888;
 }
 
-main .products .products-carousel a {
-  text-decoration: none;
-  color: inherit;
-}
-
-main .products .products-carousel a:hover .search-icon {
-  opacity: 1;
-}
-
-main .products .products-carousel .card {
-  border: 1px solid white;
-  transition: border 300ms ease-in-out;
-  position: relative;
-}
-
-main .products .products-carousel .card:hover {
-  border: 1px solid #ebebeb;
-}
-
-main .products .products-carousel .card .status {
-  position: absolute;
-  left: 1rem;
-  top: 1rem;
-}
-
-main .products .products-carousel .card .search-icon {
-  position: absolute;
-  right: 1rem;
-  top: 1rem;
-  opacity: 0;
-  transition: opacity 300ms ease-in-out;
-}
-
-main .products .products-carousel .card .card-body .card-title {
-  font-size: 13px;
-  color: #146cda;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-main .products .products-carousel .card .card-body .card-text {
-  color: #47494a;
-  font-size: 14px;
-  font-weight: 400;
-  text-transform: capitalize;
-  margin-bottom: 0.5em;
-}
-
-main .products .products-carousel .card .card-body .rating {
-  margin-bottom: 0.7em;
-}
-
-main .products .products-carousel .card .card-body .price {
-  color: #1d1d1d;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-main .products .products-carousel .card .card-body .price.ammended {
-  text-decoration: line-through;
-  color: grey;
-  font-weight: 400;
-  font-size: 14px;
-}
-
-main .products .products-carousel .card .card-body .new-price {
-  margin: 0 0.2em;
-  color: red;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-main .popular-categories .card-body {
+main.home-page .popular-categories .card-body {
   padding-top: 0;
 }
 
-main .popular-categories .card-body .card-title {
+main.home-page .popular-categories .card-body .card-title {
   color: #47494a;
   font-size: 16px;
   font-weight: 600;
   text-transform: capitalize;
 }
 
-main .popular-categories .card-body ul {
+main.home-page .popular-categories .card-body ul {
   list-style-type: none;
   margin-bottom: 1.5em;
   margin-top: 1em;
   padding: 0;
 }
 
-main .popular-categories .card-body ul li:not(:last-child) {
+main.home-page .popular-categories .card-body ul li:not(:last-child) {
   margin-bottom: 0.3em;
 }
 
-main .popular-categories .card-body ul li a {
+main.home-page .popular-categories .card-body ul li a {
   color: #888;
   text-decoration: none;
   font-size: 14px;
@@ -495,11 +500,11 @@ main .popular-categories .card-body ul li a {
   transition: color 500ms ease-in-out;
 }
 
-main .popular-categories .card-body ul li a:hover {
+main.home-page .popular-categories .card-body ul li a:hover {
   color: #146cda;
 }
 
-main .popular-categories .card-body .view-all {
+main.home-page .popular-categories .card-body .view-all {
   text-transform: uppercase;
   background-color: #f5f5f5;
   font-size: 13px;
@@ -507,21 +512,9 @@ main .popular-categories .card-body .view-all {
   transition: all 500ms ease-in-out;
 }
 
-main .popular-categories .card-body .view-all:hover {
+main.home-page .popular-categories .card-body .view-all:hover {
   background-color: #146cda;
   color: white;
-}
-
-main .btn-dark {
-  font-size: 14px;
-  font-weight: 400;
-  padding: 10px 25px;
-  transition: all 300ms ease-in-out;
-  border: none;
-}
-
-main .btn-dark:hover {
-  background-color: #146cda;
 }
 
 main.cart-page h1 {
@@ -866,6 +859,81 @@ main.product-detail-page .reviews-section .reviews-feed .review-nav .page-item .
 
 main.product-detail-page .reviews-section .reviews-feed .review-nav .page-item .page-link:hover {
   background-color: #146cda;
+  color: white;
+}
+
+main.login-page .left-section {
+  background: #3690e2;
+  background: linear-gradient(45deg, #3690e2 35%, #2d66de 100%);
+}
+
+main.login-page .left-section .left-section-inner {
+  text-align: center;
+  color: white;
+  max-width: 500px;
+}
+
+main.login-page .left-section .left-section-inner h2 {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 0.9em;
+}
+
+main.login-page .left-section .left-section-inner p {
+  line-height: 25px;
+  margin-bottom: 1em;
+}
+
+main.login-page .left-section .left-section-inner .signup-btn {
+  border: 1px solid white;
+  color: white;
+  padding: 0.8em 1.5em;
+  text-transform: uppercase;
+  transition: all 300ms ease-in-out;
+}
+
+main.login-page .left-section .left-section-inner .signup-btn:hover {
+  background-color: white;
+  color: #146cda;
+}
+
+main.login-page .right-section {
+  padding: 4em;
+}
+
+main.login-page .right-section .right-section-inner h2 {
+  font-size: 29px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 0.9em;
+  line-height: 44px;
+}
+
+main.login-page .right-section .right-section-inner input[type="text"],
+main.login-page .right-section .right-section-inner input[type="password"] {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+}
+
+main.login-page .right-section .right-section-inner input[type="text"]:focus,
+main.login-page .right-section .right-section-inner input[type="password"]:focus {
+  box-shadow: none;
+}
+
+main.login-page .right-section .right-section-inner .signin-btn {
+  border: 1px solid #3670e2;
+  background-color: #3670e2;
+  color: white;
+  padding: 0.8em 1.5em;
+  text-transform: uppercase;
+  transition: all 300ms ease-in-out;
+}
+
+main.login-page .right-section .right-section-inner .signin-btn:hover {
+  background-color: #2d66de;
   color: white;
 }
 

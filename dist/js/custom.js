@@ -96,7 +96,7 @@ $(document).ready(function () {
 	subtractBtn.addEventListener("click", () => {
 		let productQ = document.querySelector("#productQ").value;
 
-		if (productQ >= 1) {
+		if (productQ >= 2) {
 			let newQ = --productQ;
 
 			document.querySelector("#productQ").value = newQ;
