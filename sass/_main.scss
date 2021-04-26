@@ -465,8 +465,9 @@ main {
 		}
 	}
 
-	&.login-page {
-		.left-section {
+	&.login-page,
+	&.signup-page {
+		.right-section {
 			background: rgb(54, 144, 226);
 			background: linear-gradient(
 				45deg,
@@ -474,10 +475,12 @@ main {
 				rgba(45, 102, 222, 1) 100%
 			);
 
-			.left-section-inner {
+			.right-section-inner {
 				text-align: center;
 				color: white;
 				max-width: 500px;
+				padding-top: 5em;
+				padding-bottom: 5em;
 
 				h2 {
 					font-size: 24px;
@@ -506,25 +509,34 @@ main {
 			}
 		}
 
-		.right-section {
+		.left-section {
 			padding-top: 3em;
 			padding-bottom: 3em;
 
 			@media (min-width: 1200px) {
-				padding: 4em;
+				padding: 4em 4em 4em 0;
 			}
 
-			.right-section-inner {
+			.left-section-inner {
 				h2 {
 					font-size: 29px;
 					font-weight: 700;
 					text-transform: capitalize;
-					margin-bottom: 0.9em;
-					line-height: 44px;
+					margin-bottom: 0.4em;
+				}
+
+				h3 {
+					font-size: 20px;
+					font-weight: 500;
+					text-transform: capitalize;
+					margin-bottom: 1.5em;
 				}
 
 				input[type="text"],
-				input[type="password"] {
+				input[type="password"],
+				input[type="email"],
+				input[type="tel"],
+				select {
 					border-top: none;
 					border-left: none;
 					border-right: none;
@@ -532,6 +544,20 @@ main {
 
 					&:focus {
 						box-shadow: none;
+					}
+				}
+
+				.checkbox-container {
+					label {
+						font-size: 13px;
+					}
+				}
+
+				.forgot-password {
+					color: unset;
+
+					&:hover {
+						text-decoration: none;
 					}
 				}
 
@@ -549,6 +575,59 @@ main {
 					}
 				}
 			}
+		}
+	}
+
+	&.faq-page {
+		h1 {
+			color: #212529;
+			line-height: 39px;
+			font-size: 30px;
+			font-weight: 700;
+			margin-bottom: 0.6em;
+		}
+
+		.accordion {
+			.accordion-item {
+				border: 1px solid #ebebeb;
+				border-left: none;
+				border-right: none;
+				border-radius: 0;
+
+				&:first-child {
+					border-top: none;
+				}
+
+				.accordion-header {
+					.accordion-button {
+						font-weight: 700;
+						font-size: 25px;
+						padding-top: 1em;
+						padding-bottom: 1em;
+						&:not(.collapsed) {
+							color: unset;
+							background-color: unset;
+							box-shadow: unset;
+						}
+
+						&:focus {
+							box-shadow: none;
+							background-color: transparent;
+							color: unset;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.privacy-page {
+		h1 {
+			color: #212529;
+			line-height: 39px;
+			font-size: 30px;
+			font-weight: 700;
+			margin-bottom: 0.6em;
 		}
 	}
 }

@@ -180,7 +180,7 @@
 
   </header>
 
-  <main class="login-page">
+  <main class="signup-page">
 
       <section>
           <div class="container">
@@ -188,41 +188,78 @@
                   <div class="col-xl-6 left-section">
                       <div class="left-section-inner">
                           <div>
-                              <h2>Welcome Back!</h2> 
-                              <h3>Please Sign in now</h3>
+                              <h2>New Around Here?</h2> 
+                              <h3>Create Your Account Now</h3>
                           </div>
   
                           <form action="">
                               <div class="form-floating mb-3">
-                                  <input type="text" class="form-control" id="floatingInput" placeholder="Username">
-                                  <label for="floatingInput">Username</label>
-                                </div>
-                                <div class="form-floating mb-3">
-                                  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                  <input type="text" class="form-control" id="floatingFName" placeholder="First Name" name="firstName">
+                                  <label for="floatingFName">First Name</label>
+                              </div>
+                              <div class="form-floating mb-3">
+                                  <input type="text" class="form-control" id="floatingLName" placeholder="Last Name" name="lastName">
+                                  <label for="floatingLName">Last Name</label>
+                              </div>
+                              <div class="form-floating mb-3">
+                                  <input type="email" class="form-control" id="floatingEmail" placeholder="Email Address" name="email">
+                                  <label for="floatingEmail">Email Address</label>
+                              </div>
+                              <div class="form-floating mb-3">
+                                  <input type="tel" class="form-control" id="floatingPhone" placeholder="Phone Number" name="phone">
+                                  <label for="floatingPhone">Phone Number</label>
+                              </div>
+                              <div class="form-floating mb-3">
+                                  <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password">
                                   <label for="floatingPassword">Password</label>
-                                </div>
-                                <div class="form-check mb-3 checkbox-container">
-                                  <input class="form-check-input" type="checkbox" value="" id="rememberMe" checked>
-                                  <label class="form-check-label" for="rememberMe">
-                                    Remember me
-                                  </label>
-                                </div>
-                                <div class="mb-3">
-                                  <input type="submit" class="btn signin-btn w-100" value="Login">
-                                </div>
-                                <div>
-                                  <small><a href="forgot_password.html" class="forgot-password">Forget Password?</a></small>
-                                </div>
+                              </div>
+                              <div class="form-floating mb-3">
+                                  <input type="password" class="form-control" id="floatingCPassword" placeholder="Comfirm Password">
+                                  <label for="floatingCPassword">Confirm Password</label>
+                              </div>
+                              <div class="form-floating mb-3">
+                                  <input type="text" class="form-control" id="floatingAddr1" placeholder="Address 1">
+                                  <label for="floatingAddr1">Address 1</label>
+                              </div>
+                              <div class="form-floating mb-3">
+                                  <input type="text" class="form-control" id="floatingAddr2" placeholder="Address 2">
+                                  <label for="floatingAddr1">Address 2</label>
+                              </div>
+                              <div class="form-floating mb-3">
+                                  <input type="text" class="form-control" id="floatingAddr3" placeholder="Address 3">
+                                  <label for="floatingAddr3">Address 3</label>
+                              </div>
+
+                              <div class="form-floating mb-3">
+                                  <select class="form-select" id="floatingCountry" aria-label="Country select list">
+                                    <option selected>UK</option>
+                                  </select>
+                                  <label for="floatingCountry">Country</label>
+                              </div>
+
+                              <div class="form-floating mb-3">
+                                  <input type="text" class="form-control" id="floatingCity" placeholder="City">
+                                  <label for="floatingCity">City</label>
+                              </div>
+                              <div class="form-floating mb-3">
+                                  <input type="text" class="form-control" id="floatingPost" placeholder="Postcode">
+                                  <label for="floatingPost">Postcode</label>
+                              </div>
+
+                  
+                              <div>
+                                  <input type="submit" class="btn signin-btn w-100" value="Create Account">
+                              </div>
                           </form>
                       </div>
                   </div>
 
-                  <div class="col-xl-6 right-section d-flex flex-column justify-content-center align-items-center py-5">
-                      <div class="right-section-inner">
-                          <h2 class="text-light">New around here?</h2>
+                  <div class="col-xl-6 right-section d-flex flex-column align-items-center">
+                      <div class="right-section-inner sticky-top">
+                          <h2 class="text-light">Already Have an Account?</h2>
                           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam culpa sequi odit praesentium in veritatis amet delectus accusantium</p>
 
-                          <a href="signup.html" class="btn signup-btn">Create an account</a>
+                          <a href="login.html" class="btn signup-btn">Sign into account</a>
                       </div>
                   </div>
               </div>

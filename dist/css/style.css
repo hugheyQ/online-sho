@@ -200,11 +200,6 @@ section {
   opacity: 1;
 }
 
-img {
-  width: 100%;
-  height: auto;
-}
-
 header .top {
   background-color: #2064da;
   font-size: 13px;
@@ -230,17 +225,17 @@ header .top__right div:not(:last-child) {
   padding: 0 1.5em;
 }
 
-header .top__right > div:nth-child(3) {
+header .top__right > div:nth-child(2) {
   padding-left: 1.5rem;
 }
 
-header .top__right > div:nth-child(3) a {
+header .top__right > div:nth-child(2) a {
   padding: 0 0.3em;
   transition: all 0.5s ease-in-out;
   display: inline-block;
 }
 
-header .top__right > div:nth-child(3) a:hover {
+header .top__right > div:nth-child(2) a:hover {
   transform: rotateY(180deg);
 }
 
@@ -862,30 +857,32 @@ main.product-detail-page .reviews-section .reviews-feed .review-nav .page-item .
   color: white;
 }
 
-main.login-page .left-section {
+main.login-page .right-section, main.signup-page .right-section {
   background: #3690e2;
   background: linear-gradient(45deg, #3690e2 35%, #2d66de 100%);
 }
 
-main.login-page .left-section .left-section-inner {
+main.login-page .right-section .right-section-inner, main.signup-page .right-section .right-section-inner {
   text-align: center;
   color: white;
   max-width: 500px;
+  padding-top: 5em;
+  padding-bottom: 5em;
 }
 
-main.login-page .left-section .left-section-inner h2 {
+main.login-page .right-section .right-section-inner h2, main.signup-page .right-section .right-section-inner h2 {
   font-size: 24px;
   font-weight: 700;
   text-transform: capitalize;
   margin-bottom: 0.9em;
 }
 
-main.login-page .left-section .left-section-inner p {
+main.login-page .right-section .right-section-inner p, main.signup-page .right-section .right-section-inner p {
   line-height: 25px;
   margin-bottom: 1em;
 }
 
-main.login-page .left-section .left-section-inner .signup-btn {
+main.login-page .right-section .right-section-inner .signup-btn, main.signup-page .right-section .right-section-inner .signup-btn {
   border: 1px solid white;
   color: white;
   padding: 0.8em 1.5em;
@@ -893,44 +890,76 @@ main.login-page .left-section .left-section-inner .signup-btn {
   transition: all 300ms ease-in-out;
 }
 
-main.login-page .left-section .left-section-inner .signup-btn:hover {
+main.login-page .right-section .right-section-inner .signup-btn:hover, main.signup-page .right-section .right-section-inner .signup-btn:hover {
   background-color: white;
   color: #146cda;
 }
 
-main.login-page .right-section {
+main.login-page .left-section, main.signup-page .left-section {
   padding-top: 3em;
   padding-bottom: 3em;
 }
 
 @media (min-width: 1200px) {
-  main.login-page .right-section {
-    padding: 4em;
+  main.login-page .left-section, main.signup-page .left-section {
+    padding: 4em 4em 4em 0;
   }
 }
 
-main.login-page .right-section .right-section-inner h2 {
+main.login-page .left-section .left-section-inner h2, main.signup-page .left-section .left-section-inner h2 {
   font-size: 29px;
   font-weight: 700;
   text-transform: capitalize;
-  margin-bottom: 0.9em;
-  line-height: 44px;
+  margin-bottom: 0.4em;
 }
 
-main.login-page .right-section .right-section-inner input[type="text"],
-main.login-page .right-section .right-section-inner input[type="password"] {
+main.login-page .left-section .left-section-inner h3, main.signup-page .left-section .left-section-inner h3 {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-bottom: 1.5em;
+}
+
+main.login-page .left-section .left-section-inner input[type="text"],
+main.login-page .left-section .left-section-inner input[type="password"],
+main.login-page .left-section .left-section-inner input[type="email"],
+main.login-page .left-section .left-section-inner input[type="tel"],
+main.login-page .left-section .left-section-inner select, main.signup-page .left-section .left-section-inner input[type="text"],
+main.signup-page .left-section .left-section-inner input[type="password"],
+main.signup-page .left-section .left-section-inner input[type="email"],
+main.signup-page .left-section .left-section-inner input[type="tel"],
+main.signup-page .left-section .left-section-inner select {
   border-top: none;
   border-left: none;
   border-right: none;
   border-radius: 0;
 }
 
-main.login-page .right-section .right-section-inner input[type="text"]:focus,
-main.login-page .right-section .right-section-inner input[type="password"]:focus {
+main.login-page .left-section .left-section-inner input[type="text"]:focus,
+main.login-page .left-section .left-section-inner input[type="password"]:focus,
+main.login-page .left-section .left-section-inner input[type="email"]:focus,
+main.login-page .left-section .left-section-inner input[type="tel"]:focus,
+main.login-page .left-section .left-section-inner select:focus, main.signup-page .left-section .left-section-inner input[type="text"]:focus,
+main.signup-page .left-section .left-section-inner input[type="password"]:focus,
+main.signup-page .left-section .left-section-inner input[type="email"]:focus,
+main.signup-page .left-section .left-section-inner input[type="tel"]:focus,
+main.signup-page .left-section .left-section-inner select:focus {
   box-shadow: none;
 }
 
-main.login-page .right-section .right-section-inner .signin-btn {
+main.login-page .left-section .left-section-inner .checkbox-container label, main.signup-page .left-section .left-section-inner .checkbox-container label {
+  font-size: 13px;
+}
+
+main.login-page .left-section .left-section-inner .forgot-password, main.signup-page .left-section .left-section-inner .forgot-password {
+  color: unset;
+}
+
+main.login-page .left-section .left-section-inner .forgot-password:hover, main.signup-page .left-section .left-section-inner .forgot-password:hover {
+  text-decoration: none;
+}
+
+main.login-page .left-section .left-section-inner .signin-btn, main.signup-page .left-section .left-section-inner .signin-btn {
   border: 1px solid #3670e2;
   background-color: #3670e2;
   color: white;
@@ -939,9 +968,55 @@ main.login-page .right-section .right-section-inner .signin-btn {
   transition: all 300ms ease-in-out;
 }
 
-main.login-page .right-section .right-section-inner .signin-btn:hover {
+main.login-page .left-section .left-section-inner .signin-btn:hover, main.signup-page .left-section .left-section-inner .signin-btn:hover {
   background-color: #2d66de;
   color: white;
+}
+
+main.faq-page h1 {
+  color: #212529;
+  line-height: 39px;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 0.6em;
+}
+
+main.faq-page .accordion .accordion-item {
+  border: 1px solid #ebebeb;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+}
+
+main.faq-page .accordion .accordion-item:first-child {
+  border-top: none;
+}
+
+main.faq-page .accordion .accordion-item .accordion-header .accordion-button {
+  font-weight: 700;
+  font-size: 25px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+main.faq-page .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+  color: unset;
+  background-color: unset;
+  box-shadow: unset;
+}
+
+main.faq-page .accordion .accordion-item .accordion-header .accordion-button:focus {
+  box-shadow: none;
+  background-color: transparent;
+  color: unset;
+}
+
+main.privacy-page h1 {
+  color: #212529;
+  line-height: 39px;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 0.6em;
 }
 
 footer {
