@@ -1019,6 +1019,14 @@ main.privacy-page h1 {
   margin-bottom: 0.6em;
 }
 
+main.contact-page h1 {
+  color: #212529;
+  line-height: 39px;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 0.6em;
+}
+
 footer {
   background-color: #146cda;
   padding-top: 2em;
