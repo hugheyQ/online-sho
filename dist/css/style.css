@@ -1030,7 +1030,6 @@ main.contact-page h1 {
 footer {
   background-color: #146cda;
   padding-top: 2em;
-  padding-bottom: 2em;
   color: white;
 }
 
@@ -1039,7 +1038,7 @@ footer h3 {
   font-size: 16px;
   text-transform: uppercase;
   text-align: left;
-  margin-bottom: 1.5em;
+  margin-bottom: 1.2em;
 }
 
 footer p {
@@ -1109,8 +1108,14 @@ footer form .form-control {
 footer form .newsletter-signup {
   text-transform: uppercase;
   font-weight: 700;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 3em;
+  padding-right: 3em;
+  background-color: black;
+  color: white;
+}
+
+footer form .newsletter-signup:hover {
+  color: white;
 }
 
 footer .social-media-container .social-media-icon {
@@ -1135,7 +1140,22 @@ footer .social-media-container .social-media-icon:hover {
 footer .bottom-container {
   border-top: 1px solid #3b7de1;
   padding-top: 1em;
-  padding-bottom: 1em;
+}
+
+@media (max-width: 1199.98px) {
+  footer .bottom-container {
+    text-align: center;
+  }
+}
+
+footer .bottom-container p {
+  text-align: right;
+}
+
+@media (max-width: 1199.98px) {
+  footer .bottom-container p {
+    text-align: center;
+  }
 }
 
 .btn-close-modal {
