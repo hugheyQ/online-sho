@@ -199,35 +199,35 @@ header {
 					}
 				}
 
-				.dropdown-toggle::after {
-					display: none;
-				}
+				// .dropdown-toggle::after {
+				// 	display: none;
+				// }
 			}
 
 			.active {
 				background-color: #377fee;
 			}
 
-			@media (min-width: 992px) {
-				.dropdown:hover {
-					.icofont-thin-down {
-						transform: rotate(180deg);
-					}
+			// @media (min-width: 992px) {
+			// 	.dropdown:hover {
+			// 		.icofont-thin-down {
+			// 			transform: rotate(180deg);
+			// 		}
 
-					.dropdown-menu {
-						display: block;
-						transform: scale(1);
-					}
-				}
-				.dropdown-menu {
-					transition: all 0.5s;
-					overflow: hidden;
-					transform-origin: top center;
-					transform: scale(1, 0);
-					display: block;
-					margin: 0;
-				}
-			}
+			// 		.dropdown-menu {
+			// 			display: block;
+			// 			transform: scale(1);
+			// 		}
+			// 	}
+			// 	.dropdown-menu {
+			// 		transition: all 0.5s;
+			// 		overflow: hidden;
+			// 		transform-origin: top center;
+			// 		transform: scale(1, 0);
+			// 		display: block;
+			// 		margin: 0;
+			// 	}
+			// }
 		}
 	}
 }

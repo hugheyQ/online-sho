@@ -29,18 +29,35 @@ p {
   margin: 0;
 }
 
-.dropdown-submenu {
-  position: relative;
-}
-
-.dropdown-submenu .dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -1px;
+.dropdown-menu {
+  border-radius: 0;
+  padding: 0;
 }
 
 .cart-btn {
   margin-right: 1.7em;
+}
+
+.form-floating input[type="text"]:focus,
+.form-floating input[type="password"]:focus,
+.form-floating input[type="email"]:focus,
+.form-floating input[type="tel"]:focus,
+.form-floating select:focus,
+.form-floating textarea:focus {
+  box-shadow: none;
+}
+
+.form-floating input[type="text"] > option,
+.form-floating input[type="password"] > option,
+.form-floating input[type="email"] > option,
+.form-floating input[type="tel"] > option,
+.form-floating select > option,
+.form-floating textarea > option {
+  border: 1px solid red;
+}
+
+.checkbox-container label {
+  font-size: 13px;
 }
 
 .navbar-btn {
@@ -401,30 +418,8 @@ header nav .navbar-nav .nav-item .nav-link .icofont-thin-down {
   transition: all 0.5s ease-in-out;
 }
 
-header nav .navbar-nav .nav-item .dropdown-toggle::after {
-  display: none;
-}
-
 header nav .navbar-nav .active {
   background-color: #377fee;
-}
-
-@media (min-width: 992px) {
-  header nav .navbar-nav .dropdown:hover .icofont-thin-down {
-    transform: rotate(180deg);
-  }
-  header nav .navbar-nav .dropdown:hover .dropdown-menu {
-    display: block;
-    transform: scale(1);
-  }
-  header nav .navbar-nav .dropdown-menu {
-    transition: all 0.5s;
-    overflow: hidden;
-    transform-origin: top center;
-    transform: scale(1, 0);
-    display: block;
-    margin: 0;
-  }
 }
 
 main.home-page h2 {
@@ -920,37 +915,6 @@ main.login-page .left-section .left-section-inner h3, main.signup-page .left-sec
   margin-bottom: 1.5em;
 }
 
-main.login-page .left-section .left-section-inner input[type="text"],
-main.login-page .left-section .left-section-inner input[type="password"],
-main.login-page .left-section .left-section-inner input[type="email"],
-main.login-page .left-section .left-section-inner input[type="tel"],
-main.login-page .left-section .left-section-inner select, main.signup-page .left-section .left-section-inner input[type="text"],
-main.signup-page .left-section .left-section-inner input[type="password"],
-main.signup-page .left-section .left-section-inner input[type="email"],
-main.signup-page .left-section .left-section-inner input[type="tel"],
-main.signup-page .left-section .left-section-inner select {
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-radius: 0;
-}
-
-main.login-page .left-section .left-section-inner input[type="text"]:focus,
-main.login-page .left-section .left-section-inner input[type="password"]:focus,
-main.login-page .left-section .left-section-inner input[type="email"]:focus,
-main.login-page .left-section .left-section-inner input[type="tel"]:focus,
-main.login-page .left-section .left-section-inner select:focus, main.signup-page .left-section .left-section-inner input[type="text"]:focus,
-main.signup-page .left-section .left-section-inner input[type="password"]:focus,
-main.signup-page .left-section .left-section-inner input[type="email"]:focus,
-main.signup-page .left-section .left-section-inner input[type="tel"]:focus,
-main.signup-page .left-section .left-section-inner select:focus {
-  box-shadow: none;
-}
-
-main.login-page .left-section .left-section-inner .checkbox-container label, main.signup-page .left-section .left-section-inner .checkbox-container label {
-  font-size: 13px;
-}
-
 main.login-page .left-section .left-section-inner .forgot-password, main.signup-page .left-section .left-section-inner .forgot-password {
   color: unset;
 }
@@ -1019,12 +983,87 @@ main.privacy-page h1 {
   margin-bottom: 0.6em;
 }
 
-main.contact-page h1 {
-  color: #212529;
-  line-height: 39px;
-  font-size: 30px;
+main.contact-page h2 {
+  font-size: 29px;
   font-weight: 700;
-  margin-bottom: 0.6em;
+  text-transform: capitalize;
+  margin-bottom: 0.4em;
+}
+
+main.contact-page h3 {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-bottom: 1em;
+}
+
+main.contact-page .sendMessage-btn {
+  border: 1px solid #296ede;
+  color: white;
+  background-color: #296ede;
+  padding: 0.8em 1.5em;
+  text-transform: uppercase;
+  transition: all 300ms ease-in-out;
+}
+
+main.contact-page .sendMessage-btn:hover {
+  background-color: #2064da;
+  color: white;
+}
+
+main.contact-page .contact-right {
+  background: #3690e2;
+  background: linear-gradient(45deg, #3690e2 35%, #2d66de 100%);
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+main.contact-page .contact-right .contact-right-inner .contact-block {
+  margin-bottom: 1em;
+}
+
+main.contact-page .contact-right .contact-right-inner .contact-block i {
+  font-size: 3em;
+  color: white;
+}
+
+main.contact-page .contact-right .contact-right-inner .contact-block h5 {
+  color: white;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 0.7em;
+  margin-bottom: 0.5em;
+}
+
+main.contact-page .contact-right .contact-right-inner .contact-block p {
+  color: white;
+  font-style: italic;
+  font-weight: 500;
+}
+
+main.contact-page .contact-right .contact-right-inner .contact-block ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+main.contact-page .contact-right .contact-right-inner .contact-block ul li {
+  margin-bottom: 0.2em;
+}
+
+main.contact-page .contact-right .contact-right-inner .contact-block ul li a {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+  font-style: italic;
+  transition: all 300ms ease-in-out;
+  text-decoration: none;
+}
+
+main.contact-page .contact-right .contact-right-inner .contact-block ul li a:hover {
+  color: white;
 }
 
 footer {

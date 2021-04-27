@@ -30,18 +30,41 @@ p {
 	margin: 0;
 }
 
-.dropdown-submenu {
-	position: relative;
-}
-
-.dropdown-submenu .dropdown-menu {
-	top: 0;
-	left: 100%;
-	margin-top: -1px;
+.dropdown-menu {
+	border-radius: 0;
+	padding: 0;
 }
 
 .cart-btn {
 	margin-right: 1.7em;
+}
+
+.form-floating {
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	input[type="tel"],
+	select,
+	textarea {
+		// border-top: none;
+		// border-left: none;
+		// border-right: none;
+		// border-radius: 0;
+
+		&:focus {
+			box-shadow: none;
+		}
+
+		& > option {
+			border: 1px solid red;
+		}
+	}
+}
+
+.checkbox-container {
+	label {
+		font-size: 13px;
+	}
 }
 
 .navbar-btn {

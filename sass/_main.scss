@@ -532,27 +532,6 @@ main {
 					margin-bottom: 1.5em;
 				}
 
-				input[type="text"],
-				input[type="password"],
-				input[type="email"],
-				input[type="tel"],
-				select {
-					border-top: none;
-					border-left: none;
-					border-right: none;
-					border-radius: 0;
-
-					&:focus {
-						box-shadow: none;
-					}
-				}
-
-				.checkbox-container {
-					label {
-						font-size: 13px;
-					}
-				}
-
 				.forgot-password {
 					color: unset;
 
@@ -632,12 +611,92 @@ main {
 	}
 
 	&.contact-page {
-		h1 {
-			color: #212529;
-			line-height: 39px;
-			font-size: 30px;
+		h2 {
+			font-size: 29px;
 			font-weight: 700;
-			margin-bottom: 0.6em;
+			text-transform: capitalize;
+			margin-bottom: 0.4em;
+		}
+
+		h3 {
+			font-size: 20px;
+			font-weight: 500;
+			text-transform: capitalize;
+			margin-bottom: 1em;
+		}
+
+		.sendMessage-btn {
+			border: 1px solid #296ede;
+			color: white;
+			background-color: #296ede;
+			padding: 0.8em 1.5em;
+			text-transform: uppercase;
+			transition: all 300ms ease-in-out;
+
+			&:hover {
+				background-color: #2064da;
+				color: white;
+			}
+		}
+
+		.contact-right {
+			background: rgb(54, 144, 226);
+			background: linear-gradient(
+				45deg,
+				rgba(54, 144, 226, 1) 35%,
+				rgba(45, 102, 222, 1) 100%
+			);
+
+			padding-top: 2em;
+			padding-bottom: 2em;
+
+			.contact-right-inner {
+				.contact-block {
+					margin-bottom: 1em;
+					i {
+						font-size: 3em;
+						color: white;
+					}
+
+					h5 {
+						color: white;
+						text-transform: capitalize;
+						text-align: center;
+						font-weight: 700;
+						font-size: 18px;
+						margin-top: 0.7em;
+						margin-bottom: 0.5em;
+					}
+
+					p {
+						color: white;
+						font-style: italic;
+						font-weight: 500;
+					}
+
+					ul {
+						list-style-type: none;
+						margin: 0;
+						padding: 0;
+						text-align: center;
+
+						li {
+							margin-bottom: 0.2em;
+							a {
+								color: rgba(255, 255, 255, 0.8);
+								font-weight: 500;
+								font-style: italic;
+								transition: all 300ms ease-in-out;
+								text-decoration: none;
+
+								&:hover {
+									color: rgba(255, 255, 255, 1);
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }
