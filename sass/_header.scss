@@ -135,6 +135,10 @@ header {
 					&:hover {
 						color: rgba($color: #fff, $alpha: 1);
 					}
+
+					&:focus {
+						color: rgba($color: #fff, $alpha: 1);
+					}
 				}
 			}
 		}
@@ -176,9 +180,11 @@ header {
 
 			.nav-item {
 				position: relative;
+				transition: all 300ms ease-in-out;
 
 				&:hover {
 					background-color: #377fee;
+					color: white;
 				}
 
 				&:not(:last-child) {
@@ -190,22 +196,37 @@ header {
 				.nav-link {
 					color: white;
 					font-size: 14px;
-					font-weight: 700;
 					padding: 1em 1.5em;
+					text-transform: capitalize;
 
-					.icofont-thin-down {
-						display: inline-block;
-						transition: all 0.5s ease-in-out;
+					&:hover {
+						color: rgba($color: #fff, $alpha: 1);
 					}
 				}
-
-				// .dropdown-toggle::after {
-				// 	display: none;
-				// }
 			}
 
 			.active {
 				background-color: #377fee;
+			}
+
+			.dropdown-menu {
+				margin: 0;
+				font-size: 14px;
+
+				.dropdown-item {
+					padding-top: 0.5em;
+					padding-bottom: 0.5em;
+					transition: all 300ms ease-in-out;
+					&:hover {
+						background-color: #2064da;
+						color: white;
+					}
+
+					&:focus {
+						background-color: #2064da;
+						color: white;
+					}
+				}
 			}
 
 			// @media (min-width: 992px) {
