@@ -1251,6 +1251,11 @@ main.products-page .products-display-section .products-nav .page-item .page-link
   color: white;
 }
 
+main.error-page {
+  background-color: #ecf0f5;
+  height: 100vh;
+}
+
 footer {
   background-color: #146cda;
   padding-top: 2em;

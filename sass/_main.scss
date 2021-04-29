@@ -835,4 +835,9 @@ main {
 			}
 		}
 	}
+
+	&.error-page {
+		background-color: #ecf0f5;
+		height: 100vh;
+	}
 }
