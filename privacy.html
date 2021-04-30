@@ -48,6 +48,7 @@
             </ul>
 
             <div class="top__right d-flex">
+                <div><a href="wishlist.html">My Wishlist</a></div>
                 <div><a href="#">Track Your Order</a></div>
                 <div>
                     <a href="#"><i class="icofont-facebook"></i></a>
@@ -68,7 +69,6 @@
 
         <div class="header-search-wrapper d-flex align-items-center">
           <form action="" class="search-form">
-            <!-- <input type="text" class="search-field py-2" placeholder="SEARCH" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> -->
 
             <input type="text" class="search-field" placeholder="Search over 10000 products" />
             <i class="fi-rr-search"></i>
@@ -92,7 +92,7 @@
               <button class="btn navbar-btn dropdown-toggle" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false"><i class="fi-rr-user"></i></button>
 
               <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenu2">
-                <li><a href="#" class="dropdown-item" type="button">My account</a></li>
+                <li><a href="my-account.html" class="dropdown-item" type="button">My account</a></li>
                 <li><a href="checkout.html" class="dropdown-item" type="button">Checkout</a></li>
                 <li><a href="login.html" class="dropdown-item" type="button">Sign in</a></li>
               </ul>
@@ -116,14 +116,14 @@
 
 
         <div class="navbar-icons-container d-md-flex d-lg-none d-flex">
-          <button onclick="myFunction()" class="btn navbar-btn cart-btn"><i class="fi-rr-shopping-cart"></i><span>1</span></button>
+          <button onclick="shoppingCartRedirect()" class="btn navbar-btn cart-btn"><i class="fi-rr-shopping-cart"></i><span>1</span></button>
           
           
           <div class="dropdown">
             <button class="btn navbar-btn dropdown-toggle" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false"><i class="fi-rr-user"></i></button>
 
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenu2">
-              <li><a href="#" class="dropdown-item" type="button">My account</a></li>
+              <li><a href="my-account.html" class="dropdown-item" type="button">My account</a></li>
               <li><a href="checkout.html" class="dropdown-item" type="button">Checkout</a></li>
               <li><a href="login.html" class="dropdown-item" type="button">Sign in</a></li>
             </ul>
@@ -156,9 +156,12 @@
                 Most Viewed
               </a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
             <div class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                All Categories
+                <i class="bi bi-list-ul"></i> All Categories
               </a>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                   <a class="dropdown-item" href="#">Low Stock</a>
@@ -194,9 +197,6 @@
                   <a class="dropdown-item" href="#">Home Accessories</a>
               </div>
             </div>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact Us</a>
-            </li>
           </ul>
         </div>
       </div>

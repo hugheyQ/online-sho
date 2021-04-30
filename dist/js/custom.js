@@ -1,5 +1,43 @@
-function myFunction() {
+function shoppingCartRedirect() {
 	location.href = "cart.html";
+}
+
+function toggleField(clicked_id) {
+	let clickedBtn = document.querySelector("#" + clicked_id);
+	let currentParent = clickedBtn.parentNode;
+
+	let currentField = currentParent.querySelector("input");
+
+	if (!currentField.classList.contains("active")) {
+		currentField.removeAttribute("disabled");
+		currentField.classList.add("active");
+
+		clickedBtn.innerHTML = '<i class="bi bi-save"></i>';
+	} else {
+		currentField.setAttribute("disabled", "disabled");
+		currentField.classList.remove("active");
+
+		clickedBtn.innerHTML = '<i class="bi bi-pencil"></i>';
+	}
+}
+
+function togglePassword(clicked_id) {
+	let clickedBtn = document.querySelector("#" + clicked_id);
+	let currentParent = clickedBtn.parentNode;
+
+	let currentField = currentParent.querySelector("input");
+
+	if (currentField.classList.contains("encrypted")) {
+		currentField.setAttribute("type", "text");
+		currentField.classList.remove("encrypted");
+
+		clickedBtn.innerHTML = '<i class="bi bi-eye-fill"></i>';
+	} else {
+		currentField.setAttribute("type", "password");
+		currentField.classList.add("encrypted");
+
+		clickedBtn.innerHTML = '<i class="bi bi-eye-slash-fill"></i>';
+	}
 }
 
 $(document).ready(function () {

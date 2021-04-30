@@ -1,5 +1,6 @@
 {
     "editor.formatOnSave": true,
     "html.format.indentInnerHtml": true,
-    "prettier.useTabs": true
+    "prettier.useTabs": true,
+    "liveServer.settings.port": 5501
 }
