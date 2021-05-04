@@ -285,7 +285,8 @@ main {
 			overflow: hidden;
 			transition: border 300ms ease-in-out;
 
-			&:hover {
+			&:hover,
+			&.active {
 				border: 1px solid #146cda;
 				cursor: pointer;
 			}

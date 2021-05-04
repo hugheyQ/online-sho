@@ -278,17 +278,17 @@ header .top__right div:not(:last-child) {
   padding: 0 1.5em;
 }
 
-header .top__right > div:nth-child(3) {
+header .top__right > div:nth-child(2) {
   padding-left: 1.5rem;
 }
 
-header .top__right > div:nth-child(3) a {
+header .top__right > div:nth-child(2) a {
   padding: 0 0.3em;
   transition: all 0.5s ease-in-out;
   display: inline-block;
 }
 
-header .top__right > div:nth-child(3) a:hover {
+header .top__right > div:nth-child(2) a:hover {
   transform: rotateY(180deg);
 }
 
@@ -748,7 +748,7 @@ main.product-detail-page .product-thumbnail {
   transition: border 300ms ease-in-out;
 }
 
-main.product-detail-page .product-thumbnail:hover {
+main.product-detail-page .product-thumbnail:hover, main.product-detail-page .product-thumbnail.active {
   border: 1px solid #146cda;
   cursor: pointer;
 }

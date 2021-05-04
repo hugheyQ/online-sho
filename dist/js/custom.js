@@ -1,7 +1,3 @@
-function shoppingCartRedirect() {
-	location.href = "cart.html";
-}
-
 function toggleField(clicked_id) {
 	let clickedBtn = document.querySelector("#" + clicked_id);
 	let currentParent = clickedBtn.parentNode;
@@ -38,6 +34,24 @@ function togglePassword(clicked_id) {
 
 		clickedBtn.innerHTML = '<i class="bi bi-eye-slash-fill"></i>';
 	}
+}
+
+function toggleThumbnail(clicked_id) {
+	let mainDisplay = document.querySelector("#mainDisplay");
+	let currentImg = document.querySelector("#" + clicked_id).getAttribute("src");
+
+	let currentImgParent = document.querySelector("#" + clicked_id).parentNode;
+
+	let thumbnailBlock = document.querySelector(".thumbnail-block");
+
+	let previousSelectedThumbnail = thumbnailBlock.querySelector(".active");
+
+	if (!currentImgParent.classList.contains("active")) {
+		previousSelectedThumbnail.classList.remove("active");
+		currentImgParent.classList.add("active");
+	}
+
+	mainDisplay.setAttribute("src", currentImg);
 }
 
 $(document).ready(function () {
