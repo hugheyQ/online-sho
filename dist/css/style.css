@@ -135,6 +135,12 @@ section {
   top: 1rem;
 }
 
+.products .card .stock {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+}
+
 .products .card .search-icon {
   position: absolute;
   right: 1rem;
