@@ -64,10 +64,13 @@
         <a class="logo" href="index.html"><img src="images/logo.png" width="200"></a>
 
         <div class="header-search-wrapper d-flex align-items-center">
-            <form action="" class="search-form">
-
-            <input type="text" class="search-field" placeholder="Search over 10000 products" />
-            <i class="fi-rr-search"></i>
+            <form action="" method="" class="search-form">
+                <div class="input-group">
+                    <input type="search" class="form-control" placeholder="Search over 10000 products" aria-label="Search over 10000 products" aria-describedby="searchBtn">
+                    <button class="btn btn-secondary" type="button" id="searchBtn" onclick="document.location='search.html'"><i class="fi-rs-search"></i></button>
+                </div>
+            <!-- <input type="text" class="search-field" placeholder="Search over 10000 products" /> -->
+            
             </form>
             
         </div>
